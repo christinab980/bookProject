@@ -19,5 +19,9 @@
   "homepage": "https://github.com/christinab980/bookProject#readme",
   "devDependencies": {
     "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "react-redux": "^8.1.1",
+    "react-router-dom": "^6.14.1"
   }
 }
