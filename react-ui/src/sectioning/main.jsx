@@ -9,8 +9,8 @@ const Main = () => {
                 <Route path="/discover" element={<Discover />} />
                 <Route path="/" element={<Landing />} />
                 <Route path="/Genres" element={<Genres />} />
-                <Route path="/SignIn" element={<SignIn />} />
-                <Route path="/SignUp" element={<SignUp />} />
+                <Route path="/Sign-in" element={<SignIn />} />
+                <Route path="/Sign-up" element={<SignUp />} />
                 <Route path="*" element={<Error />} />
             </Routes>
         </main>

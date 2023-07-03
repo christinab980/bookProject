@@ -15,7 +15,7 @@
         "name": "Genres"
     },
     {
-        "href": "/signin",
+        "href": "/sign-in",
         "id": 104,
         "name": "Sign-In"
     }, 
