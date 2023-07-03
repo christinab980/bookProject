@@ -1,0 +1,23 @@
+{
+  "name": "bookproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christinab980/bookProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christinab980/bookProject/issues"
+  },
+  "homepage": "https://github.com/christinab980/bookProject#readme",
+  "devDependencies": {
+    "vite": "^4.3.9"
+  }
+}
