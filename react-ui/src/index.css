@@ -13,7 +13,6 @@ html {
 main {
   display: flex;
   flex: 1;
-  padding: 20px 0;
 }
 
 .root {
@@ -36,12 +35,8 @@ footer img {
 
 /* header stylings  */
 
-header img {
-  height: 55px;
-}
-
 header {
-  background-color: #f2f9f9;
+  background-color: lightgray;
   padding: 10px 0;
 }
 
