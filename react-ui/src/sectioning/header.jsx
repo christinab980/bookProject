@@ -10,6 +10,6 @@ const Header = () => {
             <div className="y-navs y-wrap">{navs} </div>
         </header>
     );
-};
-
-export default Header;
+  };
+  
+  export default Header;

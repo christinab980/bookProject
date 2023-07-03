@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header, Main, Footer } from './sectioning'
-
 import '../src/index.css'
+
 
 function App() {
 
