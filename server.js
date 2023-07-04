@@ -9,6 +9,17 @@ let date = new Date().toISOString();
 
 const server = express();
 
+const cn = {
+    host: 'localhost',
+    port: 5432,
+    database: 'bookproject',
+    user: 'postgres',
+    password: 'grady',
+    allowedExitOnIdle: true,
+  }
+
+  const db = pgp(cn);
+
 
 server.get('/heartbeat', (req, res) => {
     res.json({message: 'heartbeat'})
