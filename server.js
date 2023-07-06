@@ -16,9 +16,9 @@ const cn = {
     user: 'postgres',
     password: 'grady',
     allowedExitOnIdle: true,
-  }
+}
 
-  const db = pgp(cn);
+const db = pgp(cn);
 
 
 server.get('/heartbeat', (req, res) => {
