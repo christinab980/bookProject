@@ -1,0 +1,27 @@
+[
+    {
+        "href": "/",
+        "id": 101,
+        "name": "Landing"
+    },
+    {
+        "href": "/discover",
+        "id": 102,
+        "name": "Discover"
+    },
+    {
+        "href": "/genres",
+        "id": 103,
+        "name": "Genres"
+    },
+    {
+        "href": "/sign-in",
+        "id": 104,
+        "name": "Sign-In"
+    }, 
+    {
+        "href": "/sign-up",
+        "id": 105,
+        "name": "Sign-Up"
+    }
+]
