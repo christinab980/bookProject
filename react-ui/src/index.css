@@ -36,8 +36,11 @@ footer img {
 /* header stylings  */
 
 header {
-  background-color: lightgray;
   padding: 10px 0;
+}
+
+.logo {
+  height: 90px;
 }
 
 /* navigation stylings  */
@@ -64,3 +67,4 @@ a {
 .y-navs a:not(:first-of-type) {
   margin: 0 0 0 16px;
 }
+
