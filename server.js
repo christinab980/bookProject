@@ -50,10 +50,29 @@ server.post('/signup', async (req, res) => {
         console.log(newUsername);
         const salt = await bcrypt.genSalt(10);
         const hashedpassword = await bcrypt.hash(newPassword, salt);
-        await db.query(`INSERT INTO users (name, username, password, email, birthday) VALUES ('${newName}', '${newUsername}', '${newEmail}', '${hashedpassword}', '${newBirthday}')`);
+        await db.query(`INSERT INTO users (name, username, password, email, birthday) VALUES ('${newName}', '${newUsername}', '${hashedpassword}', '${newEmail}',  '${newBirthday}')`);
         console.log('running else');
         res.json({message: 'joined successfully'})
 
+    }
+})
+
+server.post('/signin', async (req, res) => {
+    const {currentUsername, currentEmail, currentPassword} = req.body;
+    // let results = [];
+    let search = await db.query(`SELECT * FROM users WHERE username='${currentUsername}'`);
+    let search2 = await db.query(`SELECT * FROM users WHERE email='${currentEmail}'`);
+
+    if (search.length > 0 && search2.length > 0) {
+        const hashedpassword = await db.query(`SELECT password FROM users WHERE username='${currentUsername}'`);
+        console.log(currentPassword);
+        console.log(hashedpassword)
+        const matchup = await bcrypt.compare(currentPassword, hashedpassword[0].password);
+        if (matchup) {
+            res.json({message: 'logged on'})
+        }
+    } else {
+        res.json({message: 'user does not exist'})
     }
 })
 
