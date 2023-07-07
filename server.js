@@ -28,7 +28,7 @@ server.get('/heartbeat', (req, res) => {
 })
 
 server.post('/signup', async (req, res) => {
-    const {newName, newUsername, newEmail, newPassword, newBirthday} = req.body;
+    const {newId, newName, newUsername, newEmail, newPassword, newBirthday} = req.body;
     /* The line `let search = await db.query(SELECT * FROM (users) WHERE (newUsername === username));`
     is attempting to perform a database query to search for a user with a matching `newUsername` and
     `username`. */
@@ -50,7 +50,7 @@ server.post('/signup', async (req, res) => {
         console.log(newUsername);
         const salt = await bcrypt.genSalt(10);
         const hashedpassword = await bcrypt.hash(newPassword, salt);
-        await db.query(`INSERT INTO users (name, username, password, email, birthday) VALUES ('${newName}', '${newUsername}', '${hashedpassword}', '${newEmail}',  '${newBirthday}')`);
+        await db.query(`INSERT INTO users (personid, name, username, password, email, birthday) VALUES (${newId}, '${newName}', '${newUsername}', '${hashedpassword}', '${newEmail}',  '${newBirthday}')`);
         console.log('running else');
         res.json({message: 'joined successfully'})
 
@@ -58,20 +58,21 @@ server.post('/signup', async (req, res) => {
 })
 
 server.post('/signin', async (req, res) => {
-    const {currentUsername, currentEmail, currentPassword} = req.body;
+    const {username, email, password} = req.body;
     // let results = [];
-    let search = await db.query(`SELECT * FROM users WHERE username='${currentUsername}'`);
-    let search2 = await db.query(`SELECT * FROM users WHERE email='${currentEmail}'`);
+    let search = await db.query(`SELECT * FROM users WHERE username='${username}'`);
+    let search2 = await db.query(`SELECT * FROM users WHERE email='${email}'`);
     console.log(search2)
     if (search.length > 0 || search2.length > 0) {
-        const hashedpassword = await db.query(`SELECT password FROM users WHERE username='${currentUsername}'`);
-        console.log(currentPassword);
+        const hashedpassword = await db.query(`SELECT password FROM users WHERE username='${username}'`);
+        console.log(password);
         console.log(hashedpassword)
-        // const matchup = await bcrypt.compare(currentPassword, hashedpassword[0].password);
-        if (currentPassword === hashedpassword[0].password) {
+        const matchup = await bcrypt.compare(password, hashedpassword[0].password);
+        if (matchup) {
             res.json({
-                username: currentUsername,
-                isAuthenticated: true
+                username: username,
+                isAuthenticated: true,
+                redirectTo: '/acccount'
             })
         }
     } else {
