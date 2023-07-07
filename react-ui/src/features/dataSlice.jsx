@@ -21,6 +21,6 @@ export const bookSlice = createSlice({
     }
 })
 
-export const selectBookData = state => state.quizData;
+export const selectBookData = state => state.bookData;
 
 export default bookSlice.reducer; 
