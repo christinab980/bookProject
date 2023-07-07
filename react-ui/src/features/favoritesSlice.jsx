@@ -19,4 +19,4 @@ export const favesSlice = createSlice({
 
 export const favesData = state => state.favorites;
 
-export default favoritesSlice.reducer;
+export default favesSlice.reducer;

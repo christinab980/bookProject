@@ -62,14 +62,17 @@ server.post('/signin', async (req, res) => {
     // let results = [];
     let search = await db.query(`SELECT * FROM users WHERE username='${currentUsername}'`);
     let search2 = await db.query(`SELECT * FROM users WHERE email='${currentEmail}'`);
-
-    if (search.length > 0 && search2.length > 0) {
+    console.log(search2)
+    if (search.length > 0 || search2.length > 0) {
         const hashedpassword = await db.query(`SELECT password FROM users WHERE username='${currentUsername}'`);
         console.log(currentPassword);
         console.log(hashedpassword)
-        const matchup = await bcrypt.compare(currentPassword, hashedpassword[0].password);
-        if (matchup) {
-            res.json({message: 'logged on'})
+        // const matchup = await bcrypt.compare(currentPassword, hashedpassword[0].password);
+        if (currentPassword === hashedpassword[0].password) {
+            res.json({
+                username: currentUsername,
+                isAuthenticated: true
+            })
         }
     } else {
         res.json({message: 'user does not exist'})
