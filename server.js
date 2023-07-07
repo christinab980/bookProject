@@ -76,6 +76,10 @@ server.post('/signin', async (req, res) => {
     }
 })
 
+server.get('/account', async (req, res) => {
+    let favorites = db.query(`SELECT * from favorites WHERE personid =`)
+})
+
 const PORT = 8080;
 
 server.listen(PORT, () => console.log(`This server is running at PORT ${PORT}`))
