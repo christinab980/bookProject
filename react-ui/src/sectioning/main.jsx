@@ -4,7 +4,7 @@ import {Discover, Error, Genres, Landing, SignIn, SignUp, Account } from "../vie
 
 const Main = () => {
     return (
-        <main className="y-wrap">
+        <main className="y-wrap book-listing">
             <Routes>
                 <Route path="/discover" element={<Discover />} />
                 <Route path="/" element={<Landing />} />

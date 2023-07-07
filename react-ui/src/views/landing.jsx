@@ -4,9 +4,9 @@ import Book from "../components/book"
 const Landing = () => {
 
     return (
-        <>
+        <div className='landing-container'>
             <Book /> 
-        </>
+        </div>
     )
 };
 
