@@ -71,7 +71,7 @@ a {
 
 /* landing stylings  */
 
-.landing-container {
+.landing-container, .discover-container{
   display: flex;
   gap: 25px;
   justify-content: center;
@@ -91,7 +91,7 @@ a {
   text-align: center;
 }
 
-.hero-text{
+.hero-text {
   padding: 15px;
   background-color: #fff;
   border-radius: 30px;
@@ -150,4 +150,18 @@ a {
   background-color: #3f91ab;
   color: aliceblue;
   border-radius: 20px;
+}
+
+/* discover stylings  */
+
+.discover-heading { 
+  text-align: center;
+  color:#215466;
+  margin: 15px;
+}
+
+.discover-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 30px;
 }

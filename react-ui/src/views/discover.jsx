@@ -1,8 +1,15 @@
 import React from 'react';
+import Book from "../components/book";
 
 const Discover = () => {
     return (
-        <h1>Discover</h1>
+        <>
+            <div className='hero-image-landing'></div>
+            <h2 className='discover-heading'> Top 15 Fiction Books </h2>
+            <div className='discover-container'>
+                <Book />
+            </div>
+        </>
     )
 };
 
