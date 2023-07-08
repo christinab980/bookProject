@@ -13,4 +13,10 @@ const Account = () => {
     const sendUsername =  dispatch(addUsernameToStore(userName));
     let faves = useSelector(favesData);
     setUserFavorite(faves);
+
+    return (
+        <h1>account</h1>
+    )
 }
+
+export default Account;
