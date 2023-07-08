@@ -2,7 +2,7 @@ import React from 'react';
 import data from "../navs/navs.json"
 import { NavLink } from 'react-router-dom';
 import logo from "../navs/logo.json"
-import "../index.css"
+import "/index.css"
 
 const Header = () => {
     const navs = data.map(nav => <NavLink key={nav.href} to={nav.href}>{nav.name}</NavLink>);

@@ -1,5 +1,5 @@
 import React from 'react';
-import Book from "../components/book";
+import Book from "../components/book"
 
 const Landing = () => {
 
