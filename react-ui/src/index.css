@@ -24,13 +24,14 @@ main {
 /* footer stylings  */
 
 footer {
-  background-color: lightslategray;
+  background-color: #3f91ab;
   color: white;
-  padding: 15px;
+  padding: 10px;
 }
 
 footer img {
   height: 40px;
+  margin-left: 10px;
 }
 
 /* header stylings  */
@@ -47,7 +48,6 @@ header {
 
 .y-wrap {
   margin: 0 auto;
-  width: 90%;
 }
 
 a {
@@ -58,6 +58,7 @@ a {
 .y-navs {
   display: flex;
   align-items: center;
+  width: 90%;
 }
 
 .y-navs a:first-of-type {
@@ -76,10 +77,37 @@ a {
   justify-content: center;
 }
 
+.hero-image-landing {
+  background-image: url('/hero-img-landing.png');
+  height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  margin-bottom: 15px;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text{
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 30px;
+  color:#215466
+}
+
+.hero-text p {
+  margin: 10px
+}
+
 .book-listing{
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
+
 /* book card stylings  */
 
 .book-container {
