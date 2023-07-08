@@ -28,13 +28,13 @@ server.get('/heartbeat', (req, res) => {
 })
 
 server.post('/signup', async (req, res) => {
-    const {newId, newName, newUsername, newEmail, newPassword, newBirthday} = req.body;
+    const {name, username, email, password, birthday} = req.body;
     /* The line `let search = await db.query(SELECT * FROM (users) WHERE (newUsername === username));`
     is attempting to perform a database query to search for a user with a matching `newUsername` and
     `username`. */
     let results = [];
-    let search = await db.query(`SELECT * FROM users WHERE username='${newUsername}'`);
-    let search2 = await db.query(`SELECT * FROM users WHERE email='${newEmail}'`);
+    let search = await db.query(`SELECT * FROM users WHERE username='${username}'`);
+    let search2 = await db.query(`SELECT * FROM users WHERE email='${email}'`);
     if (search && search.length > 0 || search2 && search2.length > 0) {
         results.push(search);
         results.push(search2);
@@ -45,14 +45,15 @@ server.post('/signup', async (req, res) => {
         console.log('error: user already exists');
         res.json('error: user already exists');
     } else {
-        console.log(newPassword);
-        console.log(newEmail);
-        console.log(newUsername);
         const salt = await bcrypt.genSalt(10);
-        const hashedpassword = await bcrypt.hash(newPassword, salt);
-        await db.query(`INSERT INTO users (personid, name, username, password, email, birthday) VALUES (${newId}, '${newName}', '${newUsername}', '${hashedpassword}', '${newEmail}',  '${newBirthday}')`);
+        const hashedpassword = await bcrypt.hash(password, salt);
+        await db.query(`INSERT INTO users (name, username, password, email, birthday) VALUES ('${name}', '${username}', '${hashedpassword}', '${email}',  '${birthday}')`);
         console.log('running else');
-        res.json({message: 'joined successfully'})
+        res.json({
+            username: username,
+            isAuthenticated: true,
+            redirectTo: '/acccount'
+        })
 
     }
 })

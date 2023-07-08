@@ -30,6 +30,7 @@ const SignIn = () => {
             headers: {
                 'Content-Type': 'application/json'
             },
+            // TODO fix the JSON formatting for the body after full link up
             body: JSON.stringify(username, email, password)
         })
         .then((response) => response.json())
