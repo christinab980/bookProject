@@ -1,10 +1,12 @@
 import React from 'react';
+import Book from "../components/book"
 
 const Landing = () => {
 
     return (
-        <h1>Landing</h1>
-            
+        <div className='landing-container'>
+            <Book /> 
+        </div>
     )
 };
 

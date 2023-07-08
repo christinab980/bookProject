@@ -1,10 +1,5 @@
 [
     {
-        "href": "/",
-        "id": 101,
-        "name": "Landing"
-    },
-    {
         "href": "/discover",
         "id": 102,
         "name": "Discover"
@@ -23,5 +18,10 @@
         "href": "/sign-up",
         "id": 105,
         "name": "Sign-Up"
+    },
+    {
+        "href": "/account",
+        "id": 106,
+        "name": "Account"
     }
 ]

@@ -1,0 +1,673 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2023 The New York Times Company.  All Rights Reserved.",
+    "num_results": 10,
+    "last_modified": "2019-08-29T21:23:18-04:00",
+    "results": {
+    "list_name": "Family",
+    "list_name_encoded": "family",
+    "bestsellers_date": "2016-12-31",
+    "published_date": "2017-01-15",
+    "published_date_description": "latest",
+    "next_published_date": "",
+    "previous_published_date": "2016-12-01",
+    "display_name": "Parenthood and Family",
+    "normal_list_ends_at": 10,
+    "updated": "MONTHLY",
+    "books": [
+    {
+    "rank": 1,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1617750255",
+    "primary_isbn13": "9781617750250",
+    "publisher": "Akashic",
+    "description": "A children's book parody for tired parents. Originally published in 2011.",
+    "price": "0.00",
+    "title": "GO THE -- TO SLEEP",
+    "author": "Adam Mansbach",
+    "contributor": "by Adam Mansbach. Illustrated by Ricardo Cortés",
+    "contributor_note": "Illustrated by Ricardo Cortés  ",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781617750250.jpg",
+    "book_image_width": 330,
+    "book_image_height": 251,
+    "amazon_product_url": "http://www.amazon.com/Go-F-Sleep-Adam-Mansbach/dp/1617750255?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1617750255",
+    "isbn13": "9781617750250"
+    },
+    {
+    "isbn10": "145322761X",
+    "isbn13": "9781453227619"
+    },
+    {
+    "isbn10": "145584165X",
+    "isbn13": "9781455841653"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "http://www.amazon.com/Go-F-Sleep-Adam-Mansbach/dp/1617750255?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781617750250?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781617750250"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FGO%252BTHE%252B--%252BTO%252BSLEEP%252FAdam%252BMansbach%252F9781617750250&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DGO%252BTHE%252B--%252BTO%252BSLEEP%252BAdam%252BMansbach"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781617750250&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DGO%2BTHE%2B--%2BTO%2BSLEEP"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781617750250%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DGO%2BTHE%2B--%2BTO%2BSLEEP%2BAdam%2BMansbach%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/2a58b24d-b06f-5779-8d84-1a7aec66db37"
+    },
+    {
+    "rank": 2,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "0761187480",
+    "primary_isbn13": "9780761187486",
+    "publisher": "Workman",
+    "description": "Advice for parents-to-be. Originally published in 1984.",
+    "price": "0.00",
+    "title": "WHAT TO EXPECT WHEN YOU'RE EXPECTING",
+    "author": "Heidi Murkoff and Sharon Mazel",
+    "contributor": "by Heidi Murkoff and Sharon Mazel",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9780761148579.jpg",
+    "book_image_width": 330,
+    "book_image_height": 495,
+    "amazon_product_url": "http://www.amazon.com/What-Expect-Youre-Expecting-Edition/dp/0761148574?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "0761148574",
+    "isbn13": "9780761148579"
+    },
+    {
+    "isbn10": "0761121323",
+    "isbn13": "9780761121329"
+    },
+    {
+    "isbn10": "076115079X",
+    "isbn13": "9780761150794"
+    },
+    {
+    "isbn10": "0761187480",
+    "isbn13": "9780761187486"
+    },
+    {
+    "isbn10": "0761193154",
+    "isbn13": "9780761193159"
+    },
+    {
+    "isbn10": "0606265805",
+    "isbn13": "9780606265805"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "http://www.amazon.com/What-Expect-Youre-Expecting-Edition/dp/0761148574?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9780761187486?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780761187486"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FWHAT%252BTO%252BEXPECT%252BWHEN%252BYOU%252527RE%252BEXPECTING%252FHeidi%252BMurkoff%252Band%252BSharon%252BMazel%252F9780761187486&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DWHAT%252BTO%252BEXPECT%252BWHEN%252BYOU%252527RE%252BEXPECTING%252BHeidi%252BMurkoff%252Band%252BSharon%252BMazel"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9780761187486&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DWHAT%2BTO%2BEXPECT%2BWHEN%2BYOU%2527RE%2BEXPECTING"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9780761187486%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DWHAT%2BTO%2BEXPECT%2BWHEN%2BYOU%2527RE%2BEXPECTING%2BHeidi%2BMurkoff%2Band%2BSharon%2BMazel%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/db9e2bb4-160d-5de4-97f9-cae5a68e2ce4"
+    },
+    {
+    "rank": 3,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1250075742",
+    "primary_isbn13": "9781250075741",
+    "publisher": "Flatiron",
+    "description": "After her husband confesses to multiple infidelities, a woman who has overcome bulimia and alcoholism struggles to grow — and so does he.",
+    "price": "0.00",
+    "title": "LOVE WARRIOR",
+    "author": "Glennon Doyle Melton",
+    "contributor": "by Glennon Doyle Melton",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781250075741.jpg",
+    "book_image_width": 328,
+    "book_image_height": 495,
+    "amazon_product_url": "http://www.amazon.com/Love-Warrior-Glennon-Doyle-Melton-ebook/dp/B01BKMXKPI?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1250075726",
+    "isbn13": "9781250075727"
+    },
+    {
+    "isbn10": "1250128544",
+    "isbn13": "9781250128546"
+    },
+    {
+    "isbn10": "1250110157",
+    "isbn13": "9781250110152"
+    },
+    {
+    "isbn10": "1250075742",
+    "isbn13": "9781250075741"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "http://www.amazon.com/Love-Warrior-Glennon-Doyle-Melton-ebook/dp/B01BKMXKPI?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781250075741?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781250075741"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FLOVE%252BWARRIOR%252FGlennon%252BDoyle%252BMelton%252F9781250075741&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DLOVE%252BWARRIOR%252BGlennon%252BDoyle%252BMelton"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781250075741&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DLOVE%2BWARRIOR"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781250075741%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DLOVE%2BWARRIOR%2BGlennon%2BDoyle%2BMelton%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/8fa387a6-13e7-5146-a083-8c3e3ed197f0"
+    },
+    {
+    "rank": 4,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1101984562",
+    "primary_isbn13": "9781101984567",
+    "publisher": "Dutton",
+    "description": "The sportscaster describes what it was like to forge his own career in the shadow of his beloved broadcasting father (who was also his best friend), Jack Buck.",
+    "price": "0.00",
+    "title": "LUCKY BASTARD",
+    "author": "Joe Buck",
+    "contributor": "by Joe Buck",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781101984567.jpg",
+    "book_image_width": 328,
+    "book_image_height": 495,
+    "amazon_product_url": "https://www.amazon.com/Lucky-Bastard-Life-Things-Allowed/dp/1101984562?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1101984562",
+    "isbn13": "9781101984567"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "https://www.amazon.com/Lucky-Bastard-Life-Things-Allowed/dp/1101984562?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781101984567?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781101984567"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FLUCKY%252BBASTARD%252FJoe%252BBuck%252F9781101984567&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DLUCKY%252BBASTARD%252BJoe%252BBuck"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781101984567&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DLUCKY%2BBASTARD"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781101984567%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DLUCKY%2BBASTARD%2BJoe%2BBuck%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/509e93f5-4831-5c49-867c-d230c9a84a48"
+    },
+    {
+    "rank": 5,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1452128308",
+    "primary_isbn13": "9781452128306",
+    "publisher": "Chronicle",
+    "description": "Dad Darth tries to coax young Luke and Leia to sleep with a bedtime story.",
+    "price": "0.00",
+    "title": "GOODNIGHT DARTH VADER",
+    "author": "Jeffrey Brown",
+    "contributor": "by Jeffrey Brown",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781452128306.jpg",
+    "book_image_width": 330,
+    "book_image_height": 332,
+    "amazon_product_url": "http://www.amazon.com/Goodnight-Darth-Vader-Jeffrey-Brown/dp/1452128308?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1452128308",
+    "isbn13": "9781452128306"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "http://www.amazon.com/Goodnight-Darth-Vader-Jeffrey-Brown/dp/1452128308?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781452128306?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781452128306"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FGOODNIGHT%252BDARTH%252BVADER%252FJeffrey%252BBrown%252F9781452128306&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DGOODNIGHT%252BDARTH%252BVADER%252BJeffrey%252BBrown"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781452128306&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DGOODNIGHT%2BDARTH%2BVADER"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781452128306%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DGOODNIGHT%2BDARTH%2BVADER%2BJeffrey%2BBrown%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/b3ab8edb-d6b4-5fc5-a8c9-704324f8fa55"
+    },
+    {
+    "rank": 6,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1455521159",
+    "primary_isbn13": "9781455521159",
+    "publisher": "Grand Central Life & Style",
+    "description": "A family guide to caring for people who have Alzheimer's disease, related dementias and memory loss.",
+    "price": "0.00",
+    "title": "THE 36-HOUR DAY",
+    "author": "Nancy L Mace and Peter V Rabins",
+    "contributor": "by Nancy L. Mace and Peter V. Rabins",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781455521159.jpg",
+    "book_image_width": 276,
+    "book_image_height": 495,
+    "amazon_product_url": "https://www.amazon.com/36-Hour-Day-Alzheimer-Disease-Dementias/dp/1455521159?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1455521159",
+    "isbn13": "9781455521159"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "https://www.amazon.com/36-Hour-Day-Alzheimer-Disease-Dementias/dp/1455521159?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781455521159?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781455521159"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FTHE%252B36-HOUR%252BDAY%252FNancy%252BL%252BMace%252Band%252BPeter%252BV%252BRabins%252F9781455521159&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DTHE%252B36-HOUR%252BDAY%252BNancy%252BL%252BMace%252Band%252BPeter%252BV%252BRabins"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781455521159&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DTHE%2B36-HOUR%2BDAY"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781455521159%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DTHE%2B36-HOUR%2BDAY%2BNancy%2BL%2BMace%2Band%2BPeter%2BV%2BRabins%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/ae5b4fc1-54a7-5bb3-8166-2b95889f99f5"
+    },
+    {
+    "rank": 7,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "145210655X",
+    "primary_isbn13": "9781452106557",
+    "publisher": "Chronicle",
+    "description": "In this comic reimagining, the Dark Lord of the Sith is just like any other dad.",
+    "price": "0.00",
+    "title": "DARTH VADER AND SON",
+    "author": "Jeffrey Brown",
+    "contributor": "by Jeffrey Brown",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781452106557.jpg",
+    "book_image_width": 128,
+    "book_image_height": 128,
+    "amazon_product_url": "http://www.amazon.com/Darth-Vader-Son-Jeffrey-Brown/dp/145210655X?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "145210655X",
+    "isbn13": "9781452106557"
+    },
+    {
+    "isbn10": "1452138222",
+    "isbn13": "9781452138220"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "http://www.amazon.com/Darth-Vader-Son-Jeffrey-Brown/dp/145210655X?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781452106557?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781452106557"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FDARTH%252BVADER%252BAND%252BSON%252FJeffrey%252BBrown%252F9781452106557&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DDARTH%252BVADER%252BAND%252BSON%252BJeffrey%252BBrown"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781452106557&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DDARTH%2BVADER%2BAND%2BSON"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781452106557%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DDARTH%2BVADER%2BAND%2BSON%2BJeffrey%2BBrown%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/008bf460-85a3-5662-a846-7b9ba3fd96b0"
+    },
+    {
+    "rank": 8,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "0802124739",
+    "primary_isbn13": "9780802124739",
+    "publisher": "Grove",
+    "description": "Overwhelmed by her father’s death, a British woman decides to raise a goshawk, a bird that is fierce and notoriously difficult to tame.",
+    "price": "0.00",
+    "title": "H IS FOR HAWK",
+    "author": "Helen Macdonald",
+    "contributor": "by Helen Macdonald",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9780802123411.jpg",
+    "book_image_width": 128,
+    "book_image_height": 185,
+    "amazon_product_url": "http://www.amazon.com/H-Is-Hawk-Helen-Macdonald/dp/0802123414?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "https://www.nytimes.com/2015/02/22/books/review/helen-macdonalds-h-is-for-hawk.html",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "0802123414",
+    "isbn13": "9780802123411"
+    },
+    {
+    "isbn10": "1448130727",
+    "isbn13": "9781448130726"
+    },
+    {
+    "isbn10": "1481530968",
+    "isbn13": "9781481530965"
+    },
+    {
+    "isbn10": "148153095X",
+    "isbn13": "9781481530958"
+    },
+    {
+    "isbn10": "1410483614",
+    "isbn13": "9781410483614"
+    },
+    {
+    "isbn10": "0802124739",
+    "isbn13": "9780802124739"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "http://www.amazon.com/H-Is-Hawk-Helen-Macdonald/dp/0802123414?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9780802124739?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780802124739"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FH%252BIS%252BFOR%252BHAWK%252FHelen%252BMacdonald%252F9780802124739&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DH%252BIS%252BFOR%252BHAWK%252BHelen%252BMacdonald"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9780802124739&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DH%2BIS%2BFOR%2BHAWK"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9780802124739%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DH%2BIS%2BFOR%2BHAWK%2BHelen%2BMacdonald%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/05a10fa0-9e5b-5cae-aaa1-42fb915ec8d3"
+    },
+    {
+    "rank": 9,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1101907061",
+    "primary_isbn13": "9781101907061",
+    "publisher": "Crown/Archetype",
+    "description": "Essays about life with an over-involved parent, based on the Instagram account @CrazyJewishMom.",
+    "price": "0.00",
+    "title": "MOTHER, CAN YOU NOT?",
+    "author": "Kate Siegel",
+    "contributor": "by Kate Siegel",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781101907061.jpg",
+    "book_image_width": 330,
+    "book_image_height": 427,
+    "amazon_product_url": "http://www.amazon.com/Mother-Can-You-Kate-Siegel-ebook/dp/B015VACH36?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1101907061",
+    "isbn13": "9781101907061"
+    },
+    {
+    "isbn10": "1101907045",
+    "isbn13": "9781101907047"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "http://www.amazon.com/Mother-Can-You-Kate-Siegel-ebook/dp/B015VACH36?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781101907061?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781101907061"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FMOTHER%25252C%252BCAN%252BYOU%252BNOT%25253F%252FKate%252BSiegel%252F9781101907061&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DMOTHER%25252C%252BCAN%252BYOU%252BNOT%25253F%252BKate%252BSiegel"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781101907061&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DMOTHER%252C%2BCAN%2BYOU%2BNOT%253F"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781101907061%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DMOTHER%252C%2BCAN%2BYOU%2BNOT%253F%2BKate%2BSiegel%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/397b42a2-5d62-5de3-8d8a-19d991f71dfc"
+    },
+    {
+    "rank": 10,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "0062209736",
+    "primary_isbn13": "9780062209733",
+    "publisher": "Harper",
+    "description": "Interviews with more than 70 teenagers shed light on their experience of sexuality.",
+    "price": "0.00",
+    "title": "GIRLS AND SEX",
+    "author": "Peggy Orenstein",
+    "contributor": "by Peggy Orenstein",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9780062209733.jpg",
+    "book_image_width": 328,
+    "book_image_height": 495,
+    "amazon_product_url": "http://www.amazon.com/Girls-Sex-Navigating-Complicated-Landscape-ebook/dp/B0111YAT0Y?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "https://www.nytimes.com/2016/03/27/books/review/sext-and-the-single-girl.html",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "0062209728",
+    "isbn13": "9780062209726"
+    },
+    {
+    "isbn10": "0062209736",
+    "isbn13": "9780062209733"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "http://www.amazon.com/Girls-Sex-Navigating-Complicated-Landscape-ebook/dp/B0111YAT0Y?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9780062209733?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780062209733"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FGIRLS%252BAND%252BSEX%252FPeggy%252BOrenstein%252F9780062209733&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DGIRLS%252BAND%252BSEX%252BPeggy%252BOrenstein"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9780062209733&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DGIRLS%2BAND%2BSEX"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9780062209733%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DGIRLS%2BAND%2BSEX%2BPeggy%2BOrenstein%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/fee36d14-ddad-53e6-8f5a-2391320d49dd"
+    }
+    ],
+    "corrections": []
+    }
+    }
