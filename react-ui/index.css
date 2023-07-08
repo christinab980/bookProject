@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* footer stylings  */
+
+footer {
+  background-color: lightslategray;
+  color: white;
+  padding: 15px;
+}
+
+footer img {
+  height: 40px;
+}
+
+/* header stylings  */
+
+header {
+  padding: 10px 0;
+}
+
+.logo {
+  height: 90px;
+}
+
+/* navigation stylings  */
+
+.y-wrap {
+  margin: 0 auto;
+  width: 90%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.y-navs {
+  display: flex;
+  align-items: center;
+}
+
+.y-navs a:first-of-type {
+  flex: 1;
+}
+
+.y-navs a:not(:first-of-type) {
+  margin: 0 0 0 16px;
+}
+
+/* landing stylings  */
+
+.landing-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.book-listing{
+  display: flex;
+  justify-content: center;
+}
+/* book card stylings  */
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 10px 0;
+}
+
+.book-img {
+  text-align: center;
+}
+
+.book-img img{
+  height: 150px;
+}
+
+.book-title, .book-author, .book-description, .book-buy-button {
+  font-size: .8rem;
+  color: #215466;
+  text-align: center;
+}
+
+.book-title {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.book-description, .book-buy-button {
+  margin-top: 8px;
+}
+
+.book-author {
+  color: #5e90a0;
+}
+
+.book-buy-button {
+  padding: 10px;
+  text-align: center;
+  background-color: #3f91ab;
+  color: aliceblue;
+  border-radius: 20px;
+}
