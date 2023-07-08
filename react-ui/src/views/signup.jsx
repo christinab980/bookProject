@@ -52,6 +52,7 @@ const SignUp = () => {
             dispatch(addUsernameToStore(result.username));
             location.href(result.redirectTo)
         })
+        clearUseState();
     }
     return (
         <>

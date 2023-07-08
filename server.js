@@ -6,9 +6,15 @@ const pgp = require('pg-promise')();
 const cors = require('cors');
 const bcrypt = require('bcrypt');
 let date = new Date().toISOString();
+const path = require('path');
 
 const server = express();
 server.use(express.json());
+/* The line `server.use(express.static(path.resolve(__dirname + '/react-ui/index.html')));` is
+configuring the server to serve static files from the specified directory. In this case, it is
+serving the static files from the `react-ui` directory, specifically the `index.html` file. This
+allows the server to serve the frontend of the application when the corresponding route is accessed. */
+server.use(express.static(path.resolve(__dirname +  '/react-ui/dist')));
 
 
 const cn = {
@@ -24,6 +30,10 @@ const db = pgp(cn);
 
 
 server.get('/heartbeat', (req, res) => {
+    res.json({message: 'heartbeat'})
+})
+
+server.get('/', (req, res) => {
     res.json({message: 'heartbeat'})
 })
 
@@ -84,6 +94,13 @@ server.post('/signin', async (req, res) => {
 server.get('/account', async (req, res) => {
     let favorites = db.query(`SELECT * from favorites WHERE personid =`)
 })
+
+server.get('*', (req, res) => {
+    console.log('hello')
+    const filePath = path.resolve(__dirname, './react-ui/dist', 'index.html');
+    res.setHeader('Content-Type', 'text/html');
+    res.sendFile(filePath);
+});
 
 const PORT = 8080;
 
