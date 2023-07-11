@@ -1,12 +1,10 @@
 import React, {useState} from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { favesData } from '../features/favoritesSlice';
-import { selectBookData } from '../features/dataSlice';
 
-const Button = () => {
+const Button = ({bookRank, url, book}) => {
 
     let dispatch = useDispatch()
-    let data = useSelector(selectBookData)
 
     const [ openDropDown, setOpenDropDown ] = useState(false);
     const [ favorite, setFavorite ] = useState(false);
@@ -18,26 +16,26 @@ const Button = () => {
 
     function handleFavorite() {
         setFavorite(!favorite)
-        dispatch(favesData(data.results.books.title))
+        dispatch(favesData(book))
     }
 
     function handleBooks()  {
-        setHaveRead(!haveRead)
+        setHaveRead(haveRead)
     }
 
     return (
         <>
         <div className='dropdown'>
-            <button onClick={handleOptions} className='dropdown-button'> Options </button>
+            <button onClick={handleOptions} className='dropdown-button'> Choose One </button>
             {openDropDown && <div className='dropdown-menu'>
-                {data && data.results && data.results.books && data.results.books.map((result, index) =>
-                (<a 
-                    className="dropdown-menu-items" 
-                    href={result.amazon_product_url[0]} 
-                    target="_blank">
-                        Buy
-                </a>) 
-                )}
+                <div key={bookRank}>
+                    <a
+                        className="dropdown-menu-items" 
+                        href={url} 
+                        target="_blank">
+                            Buy Here
+                    </a>
+                </div>
                 <label>
                     <input 
                         type="checkbox" 

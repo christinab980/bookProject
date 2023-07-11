@@ -3,11 +3,12 @@ import { selectBookData } from "../features/dataSlice"
 import { useSelector } from "react-redux"
 import Button from "./button"
 
+
 const Book = () => {
 
-    const [numberOfBooks, setNumberOfBooks] = useState(5)
+    const [numberOfBooks, setNumberOfBooks] = useState(5);
 
-    let data = useSelector(selectBookData)
+    let data = useSelector(selectBookData);
     console.log(data)
 
     useEffect(() => {
@@ -26,7 +27,11 @@ const Book = () => {
                     <div className="book-title">{result.title}</div>
                     <div className="book-author">{result.author}</div>
                     <div className="book-description">{result.description}</div>
-                    <Button />
+                    <Button 
+                        bookRank={result.rank}
+                        url={result.amazon_product_url}
+                        book={result}
+                    />
                 </div>
             )
         )}
