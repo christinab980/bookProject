@@ -12,7 +12,7 @@ const Landing = () => {
             </div>
         </div>
         <div className='landing-container'>
-            <Book />
+            <Book /> 
         </div>
         </>
     )
