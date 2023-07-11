@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 import { username } from '../features/usernameSlice';
-import { Dispatch } from 'react';
+import { useDispatch } from 'react-redux';
 import { addUsernameToStore } from '../features/usernameSlice';
 
 const SignIn = () => {
-    const dispatch = Dispatch();
+    const dispatch = useDispatch();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
