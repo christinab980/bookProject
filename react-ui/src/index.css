@@ -144,7 +144,7 @@ a {
   color: #5e90a0;
 }
 
-.book-buy-button, .dropdown-button {
+.book-buy-button {
   padding: 10px;
   text-align: center;
   background-color: #3f91ab;
@@ -165,37 +165,3 @@ a {
   justify-content: center;
   margin: 0 30px;
 }
-
-/* Dropdown Button  */
-
-.dropdown {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.dropdown-menu {
-  position: absolute;
-  left: 0;
-  top: calc(100% + .25rem);
-  background-color: #fff;
-  padding: .75rem;
-  border-radius: .25rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-  transform: translateY(-10px);
-  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-  display: flex;
-  flex-direction: column;
-  font-size: .9rem;
-  gap: 10px;
-  color: #215466;
-}
-
-.dropdown-button {
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-

@@ -13,7 +13,6 @@ const Genres = () => {
     const [isModal, setIsModal] = useState(false);
     const [isBookOptions, setIsBookOptions] = useState([])
 
-    const tags = ["combined-print-and-e-book-fiction", "combined-print-and-e-book-nonfiction", "mass-market-paperback", "paperback-nonfiction", "family", "paperback-advice", "paperback-graphic-books", "manga", "chapter-books", "picture-books", "young-adult", "crime-and-punishment", "eduction", "relationship", "sports", "travel", "science"]
     const apiKey = "eiXQ9V4I2rAf8ZwUbsSDCskl2h4PyvOl";
 
     useEffect(() => {
