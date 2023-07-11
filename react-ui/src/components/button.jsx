@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import { useDispatch } from 'react-redux';
-import { favesData } from '../features/favoritesSlice';
+import { setFavorite } from '../features/favoritesSlice';
 
 const Button = ({bookRank, url, book}) => {
 
     let dispatch = useDispatch()
 
     const [ openDropDown, setOpenDropDown ] = useState(false);
-    const [ favorite, setFavorite ] = useState(false);
+    const [ favorite, setFavoriteCheckBox ] = useState(false);
     const [ haveRead, setHaveRead ] = useState(false);
 
     function handleOptions() {
@@ -15,8 +15,8 @@ const Button = ({bookRank, url, book}) => {
     }
 
     function handleFavorite() {
-        setFavorite(!favorite)
-        dispatch(favesData(book))
+        setFavoriteCheckBox(!favorite)
+        dispatch(setFavorite(book))
     }
 
     function handleBooks()  {
