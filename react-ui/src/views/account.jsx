@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
-import { useState, useSelector } from "react";
-import { favesData } from "../features/favoritesSlice";
+import { setFavorite } from "../features/favoritesSlice";
 import { addUsernameToStore } from "../features/usernameSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Account = () => {
-    const dispatch = Dispatch();
+    const dispatch = useDispatch();
+
     let [userFavorites, setUserFavorite] = useState('');
     let [userName, setUserName] = useState('');
-    let username = res.username;
+    // let username = res.username;
+    
     const sendUsername =  dispatch(addUsernameToStore(userName));
-    let faves = useSelector(favesData);
+    let faves = useSelector(setFavorite);
     setUserFavorite(faves);
 
     return (
