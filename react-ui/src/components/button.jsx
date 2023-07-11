@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { useDispatch } from 'react-redux';
 import { setFavorite } from '../features/favoritesSlice';
+import { setHaveRead } from '../features/haveReadSlice';
 
 const Button = ({bookRank, url, book}) => {
 
@@ -8,7 +9,7 @@ const Button = ({bookRank, url, book}) => {
 
     const [ openDropDown, setOpenDropDown ] = useState(false);
     const [ favorite, setFavoriteCheckBox ] = useState(false);
-    const [ haveRead, setHaveRead ] = useState(false);
+    const [ haveRead, setHaveReadCheckBox ] = useState(false);
 
     function handleOptions() {
         setOpenDropDown(!openDropDown)
@@ -20,7 +21,8 @@ const Button = ({bookRank, url, book}) => {
     }
 
     function handleBooks()  {
-        setHaveRead(haveRead)
+        setHaveReadCheckBox(!haveRead)
+        dispatch(setHaveRead(book))
     }
 
     return (
