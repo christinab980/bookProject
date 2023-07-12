@@ -20,8 +20,6 @@ const Button = ({bookRank, url, book}) => {
     const [ favorite, setFavoriteCheckBox ] = useState(false);
     const [ haveReadCheckBox, setHaveReadCheckBox ] = useState(false);
     const [ loggedIn, setLoggedIn] = useState(false);
-    // const [ haveRead, setHaveRead ] = useState(false);
-
 
     function handleOptions() {
         setOpenDropDown(!openDropDown)
