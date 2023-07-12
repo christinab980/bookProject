@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { setFavorite } from '../features/favoritesSlice';
 import { setHaveRead } from '../features/haveReadSlice';
 
+
 const Button = ({bookRank, url, book}) => {
 
     let dispatch = useDispatch()
@@ -11,6 +12,8 @@ const Button = ({bookRank, url, book}) => {
     const [ favorite, setFavoriteCheckBox ] = useState(false);
     const [ haveRead, setHaveReadCheckBox ] = useState(false);
     const [ loggedIn, setLoggedIn] = useState(false);
+    const [ haveRead, setHaveRead ] = useState(false);
+
 
     function handleOptions() {
         setOpenDropDown(!openDropDown)
