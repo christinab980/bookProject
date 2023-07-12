@@ -56,14 +56,14 @@ const SignUp = () => {
     }
     return (
         <>
-            <h1>Sign Up</h1>
+            <h3>Create an Account</h3>
             <form>
-                <input type='text' id='name' value={name} onChange={handleName}/>
-                <input type='text' id='username' value={username} onChange={handleUsername}/>
-                <input type='text' id='email' value={email} onChange={handleEmail} />
-                <input type='text' id='password' value={password} onChange={handlePassword}/>
-                <input type='text' id='birthday' value={birthday} onChange={handleBday}/>
-                <button type='submit' id='submitBtn' onClick={handleSubmit}/> 
+                <input type='text' placeholder="Name" id='name' value={name} onChange={handleName}/>
+                <input type='text' placeholder='Username' id='username' value={username} onChange={handleUsername}/>
+                <input type='text' placeholder='Email' id='email' value={email} onChange={handleEmail} />
+                <input type='text' placeholder="Password"id='password' value={password} onChange={handlePassword}/>
+                <input type='text' placeholder='Birthday' id='birthday' value={birthday} onChange={handleBday}/>
+                <button type='submit' id='submitBtn' onClick={handleSubmit}>Submit</button> 
             </form>
         </>
     )
