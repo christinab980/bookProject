@@ -68,6 +68,7 @@ const SignIn = () => {
                         value={password}
                         onChange={handlePassword}
                     />
+                        <a className="form-a" href="/sign-up">Create an Account </a>
                     <div className='form-button'>
                         <button type='submit' id='submitBtn' onClick={handleSubmit}> Submit</button> 
                     </div>
