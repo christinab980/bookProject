@@ -68,7 +68,7 @@ server.post('/signup', async (req, res) => {
     }
 })
 
-server.post('/signin', async (req, res) => {
+server.post('/api/signin', async (req, res) => {
     const {username, email, password} = req.body;
     // let results = [];
     let search = await db.query(`SELECT * FROM users WHERE username='${username}'`);
