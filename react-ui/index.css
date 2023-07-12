@@ -27,6 +27,7 @@ footer {
   background-color: #3f91ab;
   color: white;
   padding: 10px;
+  margin-top: 10%;
 }
 
 footer img {
@@ -115,6 +116,7 @@ a {
   flex-direction: column;
   width: 150px;
   margin: 10px 0;
+  height: 350px;
 }
 
 .book-img {
@@ -128,6 +130,9 @@ a {
 .book-title, .book-author, .book-description, .book-buy-button {
   font-size: .8rem;
   color: #215466;
+}
+
+.book-title, .book-author, .book-buy-button {
   text-align: center;
 }
 
@@ -140,11 +145,19 @@ a {
   margin-top: 8px;
 }
 
+.book-description {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .book-author {
   color: #5e90a0;
 }
 
-.book-buy-button, .dropdown-button {
+.book-buy-button, .dropdown-button, form button {
   padding: 10px;
   text-align: center;
   background-color: #3f91ab;
@@ -177,7 +190,7 @@ a {
 
 .dropdown-menu {
   position: absolute;
-  left: 0;
+  left: 35px;
   top: calc(100% + .25rem);
   background-color: #fff;
   padding: .75rem;
@@ -199,3 +212,37 @@ a {
   align-items: center;
 }
 
+/* Sign-In Form */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px;
+  width: 500px;
+}
+
+input {
+  font-size: 1.1rem;
+  border: 1px solid lightgray;
+  height: 2rem;
+  padding: 10px;
+}
+
+form button {
+  border: none;
+  width: 150px;
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

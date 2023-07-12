@@ -45,13 +45,34 @@ const SignIn = () => {
     
     return (
         <>
-            <h1>Sign-In</h1>
-            <form>
-                <input type='text' id='username' value={username} onChange={handleUsername}/>
-                <input type='text' id='email' value={email} onChange={handleEmail} />
-                <input type='text' id='password' value={password} onChange={handlePassword}/>
-                <button type='submit' id='submitBtn' onClick={handleSubmit}/> 
-            </form>
+            <div className='form-container'>
+                <h3>Login</h3>
+                <form >
+                    <input 
+                        type='text'
+                        placeholder='username' 
+                        id='username' value={username} 
+                        onChange={handleUsername}
+                    />
+                    <input 
+                        type='text' 
+                        placeholder='email' 
+                        id='email' 
+                        value={email} 
+                        onChange={handleEmail} 
+                    />
+                    <input 
+                        type='text' 
+                        placeholder="password" 
+                        id='password' 
+                        value={password}
+                        onChange={handlePassword}
+                    />
+                    <div className='form-button'>
+                        <button type='submit' id='submitBtn' onClick={handleSubmit}> Submit</button> 
+                    </div>
+                </form>
+            </div>
         </>
     )
 };
