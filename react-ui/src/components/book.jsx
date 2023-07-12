@@ -6,18 +6,22 @@ import Button from "./button"
 
 const Book = () => {
     const currentUrl = location.href;
-    const url = currentUrl.match(/([^\/]+$)/g)[0];
-    console.log(url);
     const [numberOfBooks, setNumberOfBooks] = useState(5);
 
     let data = useSelector(selectBookData);
     console.log(data)
 
     useEffect(() => {
-        if (url === 'discover') {
+        if (currentUrl.includes('discover')) {
             setNumberOfBooks(15)
         }
     }, [])
+
+    // useEffect(() => {
+    //     if (url === 'discover') {
+    //         setNumberOfBooks(15)
+    //     }
+    // }, [])
 
     return (
         <> 
