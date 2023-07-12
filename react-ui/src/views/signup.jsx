@@ -1,3 +1,4 @@
+import { response } from 'express';
 import React from 'react';
 import { useState } from 'react';
 
@@ -17,23 +18,23 @@ const SignUp = () => {
     }
 
     const handleName = e => {
-        setAttemptedName(e.target.value)
+        setName(e.target.value)
     }
 
     const handleUsername = e => {
-        setAttemptedUser(e.target.value)
+        setUser(e.target.value)
     }
 
     const handlePassword = e => {
-        setAttemptedPass(e.target.value)
+        setPass(e.target.value)
     }
 
     const handleEmail = e => {
-        setAttemptedEmail(e.target.value)
+        setEmail(e.target.value)
     }
 
     const handleBday = e => {
-        setAttemptedBday(e.target.value)
+        setBirthday(e.target.value)
     }
 
     const handleSubmit = e => {
@@ -49,6 +50,7 @@ const SignUp = () => {
         })
         .then((response) => response.json())
         .then((result) => {
+            console.log(response)
             dispatch(addUsernameToStore(result.username));
             location.href(result.redirectTo)
         })

@@ -91,6 +91,13 @@ server.post('/api/signin', async (req, res) => {
     }
 })
 
+server.get('/api/favoriteGenres', async (req, res) => {
+    let { username } = req.body;
+    let userId = await db.query(`SELECT personid FROM users WHERE username='${username}'`)
+    let favoriteGenres = await db.query(`SELECT favoritegenres FROM favorites WHERE personid='${userId}'`);
+    res.json(favoriteGenres);
+})
+
 server.get('/account', async (req, res) => {
     let favorites = db.query(`SELECT * from favorites WHERE personid =`)
 })
