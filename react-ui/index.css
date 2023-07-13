@@ -143,17 +143,9 @@ a {
 .book-container {
   display: flex;
   flex-direction: column;
-  min-width: 150px;
+  width: 150px;
   margin: 10px 0;
   height: 350px;
-}
-
-.book-container-non-fiction {
-  display: flex;
-  flex-direction: column;
-  min-width: 150px;
-  margin: 10px 0;
-  min-height: 350px;
 }
 
 .book-img {
@@ -289,21 +281,6 @@ form a {
   color: #215466;
 }
 
-/* .form-a:after, .y-navs a:after {
-  content: "" ;
-  position: absolute;
-  background-color: #215466;
-  height: 3px;
-  width: 0;
-  left: 0;
-  bottom: 10px;
-  transition: .3s;
-}
-
-.form-a:hover:after, .y-navs a:hover:after {
-  width: 100%;
-} */
-
 .form-button {
   display: flex;
   justify-content: center;
@@ -350,9 +327,17 @@ form a {
   flex-direction: column;
   min-width: 150px;
   margin: 10px 0;
-  height: 250px;
+  height: 260px;
 }
 
 .book-author-genre {
   flex: 1;
+}
+
+.book-container-genre-page {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  margin: 10px 0;
+  min-height: 350px;
 }
