@@ -143,9 +143,17 @@ a {
 .book-container {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  min-width: 150px;
   margin: 10px 0;
   height: 350px;
+}
+
+.book-container-non-fiction {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  margin: 10px 0;
+  min-height: 350px;
 }
 
 .book-img {
@@ -321,7 +329,8 @@ form a {
 .genre-category-component {
   display: flex;
   gap: 15px;
-  /* overflow-x: scroll; */
+  width: 90vw;
+  overflow-x: scroll;
 }
 
 .genre-category-container {
@@ -333,12 +342,13 @@ form a {
 .genre-category-container h2 {
   text-align: center;
   color: #215466;
+  margin-bottom: 2%;
 }
 
 .book-container-genre {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  min-width: 150px;
   margin: 10px 0;
   height: 250px;
 }

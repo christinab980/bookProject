@@ -33,7 +33,7 @@ const Genres = () => {
                 <h2>Non-Fiction </h2>
                 <div className='genre-category-component'>
                     {nonfiction.results.books.map((result, index) => 
-                        <div className='book-container'>
+                        <div className='book-container-non-fiction'>
                             <div className='book-img'>
                                 <img src={result.book_image} alt="book-cover" />
                             </div>
