@@ -302,3 +302,30 @@ form a {
   align-items: center;
 }
 
+/* Genres Styles */
+
+.hero-image-genre {
+  background-image: url('/book_genre_hero_img.png');
+  height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  margin-bottom: 15px;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.genre-category-component {
+  display: flex;
+  /* overflow-x: scroll; */
+}
+
+.genre-category-container {
+  margin: 10px 40px;
+  display: flex;
+  flex-direction: column;
+}
+

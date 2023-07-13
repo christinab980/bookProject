@@ -14,14 +14,10 @@ const Book = () => {
     useEffect(() => {
         if (currentUrl.includes('discover')) {
             setNumberOfBooks(15)
-        }
+        } if (currentUrl.includes('genres')) {
+            setNumberOfBooks(15)
+        } 
     }, [])
-
-    // useEffect(() => {
-    //     if (url === 'discover') {
-    //         setNumberOfBooks(15)
-    //     }
-    // }, [])
 
     return (
         <> 
