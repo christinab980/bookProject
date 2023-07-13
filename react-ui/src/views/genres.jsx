@@ -93,12 +93,12 @@ const Genres = () => {
                 <h2>Science </h2>
                 <div className='genre-category-component'>
                     {science.results.books.map((result, index) => 
-                        <div className='book-container'>
+                        <div className='book-container-genre'>
                             <div className='book-img'>
                                 <img src={result.book_image} alt="book-cover" />
                             </div>
                             <div className="book-title">{result.title}</div>
-                            <div className="book-author">{result.author}</div>
+                            <div className="book-author-genre">{result.author}</div>
                             <Button 
                                 bookRank={result.rank}
                                 url={result.amazon_product_url}
@@ -112,12 +112,12 @@ const Genres = () => {
                 <h2>Sports</h2>
                 <div className='genre-category-component'>
                     {sports.results.books.map((result, index) => 
-                        <div className='book-container'>
+                        <div className='book-container-genre'>
                             <div className='book-img'>
                                 <img src={result.book_image} alt="book-cover" />
                             </div>
                             <div className="book-title">{result.title}</div>
-                            <div className="book-author">{result.author}</div>
+                            <div className="book-author-genre">{result.author}</div>
                             <Button 
                                 bookRank={result.rank}
                                 url={result.amazon_product_url}

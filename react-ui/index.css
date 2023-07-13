@@ -156,12 +156,12 @@ a {
   height: 150px;
 }
 
-.book-title, .book-author, .book-description, .book-buy-button {
+.book-title, .book-author, .book-description, .book-buy-button, .book-author-genre {
   font-size: .8rem;
   color: #215466;
 }
 
-.book-title, .book-author, .book-buy-button {
+.book-title, .book-author, .book-buy-button, .book-author-genre {
   text-align: center;
 }
 
@@ -182,7 +182,7 @@ a {
   text-align: center;
 }
 
-.book-author {
+.book-author, .book-author-genre{
   color: #5e90a0;
 }
 
@@ -320,6 +320,7 @@ form a {
 
 .genre-category-component {
   display: flex;
+  gap: 15px;
   /* overflow-x: scroll; */
 }
 
@@ -329,3 +330,19 @@ form a {
   flex-direction: column;
 }
 
+.genre-category-container h2 {
+  text-align: center;
+  color: #215466;
+}
+
+.book-container-genre {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 10px 0;
+  height: 250px;
+}
+
+.book-author-genre {
+  flex: 1;
+}
