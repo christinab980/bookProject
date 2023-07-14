@@ -115,6 +115,11 @@ a {
   flex-direction: column;
   width: 150px;
   margin: 10px 0;
+  height: 310px;
+}
+
+.book-description {
+  flex: 1;
 }
 
 .book-img {
