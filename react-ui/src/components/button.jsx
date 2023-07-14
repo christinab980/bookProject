@@ -1,19 +1,24 @@
-import React, {useState} from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { setFavorite } from '../features/favoritesSlice';
 import { setHaveRead } from '../features/haveReadSlice';
-
+import { username } from "../features/usernameSlice"
 
 const Button = ({bookRank, url, book}) => {
 
     let dispatch = useDispatch()
+    const loggedInData = useSelector(username)
+
+    useEffect(() => {
+        if (loggedInData.length > 0) {
+            setLoggedIn(true)
+        }
+    }, [])
 
     const [ openDropDown, setOpenDropDown ] = useState(false);
     const [ favorite, setFavoriteCheckBox ] = useState(false);
-    const [ haveRead, setHaveReadCheckBox ] = useState(false);
+    const [ haveReadCheckBox, setHaveReadCheckBox ] = useState(false);
     const [ loggedIn, setLoggedIn] = useState(false);
-    // const [ haveRead, setHaveRead ] = useState(false);
-
 
     function handleOptions() {
         setOpenDropDown(!openDropDown)
@@ -25,7 +30,7 @@ const Button = ({bookRank, url, book}) => {
     }
 
     function handleBooks()  {
-        setHaveReadCheckBox(!haveRead)
+        setHaveReadCheckBox(!haveReadCheckBox)
         dispatch(setHaveRead(book))
     }
 
@@ -76,14 +81,13 @@ const Button = ({bookRank, url, book}) => {
                     <label>
                         <input 
                             type="checkbox" 
-                            value={haveRead} 
+                            value={haveReadCheckBox} 
                             onChange={handleBooks} 
                             />
                             Have Read
                     </label>
                 </div>}
             </div> 
-            )
     }
         </>
     )

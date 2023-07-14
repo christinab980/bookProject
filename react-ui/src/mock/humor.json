@@ -1,0 +1,681 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2023 The New York Times Company.  All Rights Reserved.",
+    "num_results": 10,
+    "last_modified": "2019-08-29T21:23:18-04:00",
+    "results": {
+    "list_name": "Humor",
+    "list_name_encoded": "humor",
+    "bestsellers_date": "2016-12-31",
+    "published_date": "2017-01-15",
+    "published_date_description": "latest",
+    "next_published_date": "",
+    "previous_published_date": "2016-12-01",
+    "display_name": "Humor",
+    "normal_list_ends_at": 10,
+    "updated": "MONTHLY",
+    "books": [
+    {
+    "rank": 1,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "0425285170",
+    "primary_isbn13": "9780425285176",
+    "publisher": "Random House",
+    "description": "Essays by the star of “Gilmore Girls” (both the original and the mini-series) and “Parenthood.”",
+    "price": "0.00",
+    "title": "TALKING AS FAST AS I CAN",
+    "author": "Lauren Graham",
+    "contributor": "by Lauren Graham",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9780425285183.jpg",
+    "book_image_width": 328,
+    "book_image_height": 495,
+    "amazon_product_url": "https://www.amazon.com/Talking-Fast-Can-Gilmore-Everything-ebook/dp/B01G0GD07M?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "0425285170",
+    "isbn13": "9780425285176"
+    },
+    {
+    "isbn10": "0425285189",
+    "isbn13": "9780425285183"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "https://www.amazon.com/Talking-Fast-Can-Gilmore-Everything-ebook/dp/B01G0GD07M?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9780425285176?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780425285176"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FTALKING%252BAS%252BFAST%252BAS%252BI%252BCAN%252FLauren%252BGraham%252F9780425285176&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DTALKING%252BAS%252BFAST%252BAS%252BI%252BCAN%252BLauren%252BGraham"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9780425285176&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DTALKING%2BAS%2BFAST%2BAS%2BI%2BCAN"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9780425285176%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DTALKING%2BAS%2BFAST%2BAS%2BI%2BCAN%2BLauren%2BGraham%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/6304bfc4-7ee4-516f-87d0-20511c4c76e6"
+    },
+    {
+    "rank": 2,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "0399588175",
+    "primary_isbn13": "9780399588174",
+    "publisher": "Spiegel & Grau",
+    "description": "A memoir about growing up in South Africa by the comedian, now the host of “The Daily Show,” who was born into an illegal interracial relationship.",
+    "price": "0.00",
+    "title": "BORN A CRIME",
+    "author": "Trevor Noah",
+    "contributor": "by Trevor Noah",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9780399588181.jpg",
+    "book_image_width": 326,
+    "book_image_height": 495,
+    "amazon_product_url": "https://www.amazon.com/Born-Crime-Stories-African-Childhood-ebook/dp/B01DHWACVY?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "0399588175",
+    "isbn13": "9780399588174"
+    },
+    {
+    "isbn10": "0399588183",
+    "isbn13": "9780399588181"
+    },
+    {
+    "isbn10": "1531865038",
+    "isbn13": "9781531865030"
+    },
+    {
+    "isbn10": "1531865046",
+    "isbn13": "9781531865047"
+    },
+    {
+    "isbn10": "0399588191",
+    "isbn13": "9780399588198"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "https://www.amazon.com/Born-Crime-Stories-African-Childhood-ebook/dp/B01DHWACVY?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9780399588174?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780399588174"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FBORN%252BA%252BCRIME%252FTrevor%252BNoah%252F9780399588174&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DBORN%252BA%252BCRIME%252BTrevor%252BNoah"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9780399588174&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DBORN%2BA%2BCRIME"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9780399588174%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DBORN%2BA%2BCRIME%2BTrevor%2BNoah%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/f6f9b274-6e97-51e2-b784-bd71d0dd21f6"
+    },
+    {
+    "rank": 3,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1455565385",
+    "primary_isbn13": "9781455565382",
+    "publisher": "Grand Central",
+    "description": "An oral history of the show, based on extensive interviews with Jon Stewart and others.",
+    "price": "0.00",
+    "title": "THE DAILY SHOW (THE BOOK)",
+    "author": "Chris Smith",
+    "contributor": "by Chris Smith",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781455565382.jpg",
+    "book_image_width": 327,
+    "book_image_height": 495,
+    "amazon_product_url": "https://www.amazon.com/Daily-Show-Book-History-Correspondents/dp/1455565385?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "https://www.nytimes.com/2016/12/01/books/review/daily-show-oral-history-chris-smith.html",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1455565385",
+    "isbn13": "9781455565382"
+    },
+    {
+    "isbn10": "1455565350",
+    "isbn13": "9781455565351"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "https://www.amazon.com/Daily-Show-Book-History-Correspondents/dp/1455565385?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781455565382?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781455565382"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FTHE%252BDAILY%252BSHOW%252B%252528THE%252BBOOK%252529%252FChris%252BSmith%252F9781455565382&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DTHE%252BDAILY%252BSHOW%252B%252528THE%252BBOOK%252529%252BChris%252BSmith"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781455565382&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DTHE%2BDAILY%2BSHOW%2B%2528THE%2BBOOK%2529"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781455565382%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DTHE%2BDAILY%2BSHOW%2B%2528THE%2BBOOK%2529%2BChris%2BSmith%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/36699959-1f8e-54a1-a8fb-c3ec4fc583cc"
+    },
+    {
+    "rank": 4,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1501139886",
+    "primary_isbn13": "9781501139888",
+    "publisher": "Gallery Books",
+    "description": "Humorous personal essays by the comedian, actor and writer.",
+    "price": "0.00",
+    "title": "THE GIRL WITH THE LOWER BACK TATTOO",
+    "author": "Amy Schumer",
+    "contributor": "by Amy Schumer",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781501139901.jpg",
+    "book_image_width": 328,
+    "book_image_height": 495,
+    "amazon_product_url": "http://www.amazon.com/Girl-Lower-Back-Tattoo-ebook/dp/B01CIM1L0U?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1501139886",
+    "isbn13": "9781501139888"
+    },
+    {
+    "isbn10": "1501139908",
+    "isbn13": "9781501139901"
+    },
+    {
+    "isbn10": "1501153056",
+    "isbn13": "9781501153051"
+    },
+    {
+    "isbn10": "1508222002",
+    "isbn13": "9781508222002"
+    },
+    {
+    "isbn10": "1501139894",
+    "isbn13": "9781501139895"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "http://www.amazon.com/Girl-Lower-Back-Tattoo-ebook/dp/B01CIM1L0U?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781501139888?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781501139888"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FTHE%252BGIRL%252BWITH%252BTHE%252BLOWER%252BBACK%252BTATTOO%252FAmy%252BSchumer%252F9781501139888&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DTHE%252BGIRL%252BWITH%252BTHE%252BLOWER%252BBACK%252BTATTOO%252BAmy%252BSchumer"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781501139888&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DTHE%2BGIRL%2BWITH%2BTHE%2BLOWER%2BBACK%2BTATTOO"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781501139888%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DTHE%2BGIRL%2BWITH%2BTHE%2BLOWER%2BBACK%2BTATTOO%2BAmy%2BSchumer%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/4944153f-f035-553a-8f7d-463e1732b0fb"
+    },
+    {
+    "rank": 5,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1501117203",
+    "primary_isbn13": "9781501117206",
+    "publisher": "Touchstone",
+    "description": "Autobiographical essays by the young actress.",
+    "price": "0.00",
+    "title": "SCRAPPY LITTLE NOBODY",
+    "author": "Anna Kendrick",
+    "contributor": "by Anna Kendrick",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781501117237.jpg",
+    "book_image_width": 323,
+    "book_image_height": 495,
+    "amazon_product_url": "https://www.amazon.com/Scrappy-Little-Nobody-Anna-Kendrick-ebook/dp/B01E4BC1RU?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1501117203",
+    "isbn13": "9781501117206"
+    },
+    {
+    "isbn10": "1501117238",
+    "isbn13": "9781501117237"
+    },
+    {
+    "isbn10": "1471156842",
+    "isbn13": "9781471156847"
+    },
+    {
+    "isbn10": "150111722X",
+    "isbn13": "9781501117220"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "https://www.amazon.com/Scrappy-Little-Nobody-Anna-Kendrick-ebook/dp/B01E4BC1RU?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781501117206?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781501117206"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FSCRAPPY%252BLITTLE%252BNOBODY%252FAnna%252BKendrick%252F9781501117206&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DSCRAPPY%252BLITTLE%252BNOBODY%252BAnna%252BKendrick"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781501117206&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DSCRAPPY%2BLITTLE%2BNOBODY"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781501117206%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DSCRAPPY%2BLITTLE%2BNOBODY%2BAnna%2BKendrick%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/5db615e0-6309-5bf1-93c6-54232e2a2528"
+    },
+    {
+    "rank": 6,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1250116481",
+    "primary_isbn13": "9781250116482",
+    "publisher": "Holt",
+    "description": "The further adventures of the TV producer (\"Watch What Happens: Live\" and the \"Real Housewives\" franchise) and personality.",
+    "price": "0.00",
+    "title": "SUPERFICIAL",
+    "author": "Andy Cohen",
+    "contributor": "by Andy Cohen",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781250116482.jpg",
+    "book_image_width": 330,
+    "book_image_height": 462,
+    "amazon_product_url": "https://www.amazon.com/Superficial-More-Adventures-Cohen-Diaries/dp/1250116481?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1250116481",
+    "isbn13": "9781250116482"
+    },
+    {
+    "isbn10": "1250116473",
+    "isbn13": "9781250116475"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "https://www.amazon.com/Superficial-More-Adventures-Cohen-Diaries/dp/1250116481?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781250116482?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781250116482"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FSUPERFICIAL%252FAndy%252BCohen%252F9781250116482&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DSUPERFICIAL%252BAndy%252BCohen"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781250116482&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DSUPERFICIAL"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781250116482%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DSUPERFICIAL%2BAndy%2BCohen%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/18d8d23f-0cd7-548d-830e-3ac64502f796"
+    },
+    {
+    "rank": 7,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1439153809",
+    "primary_isbn13": "9781439153802",
+    "publisher": "Simon & Schuster",
+    "description": "A memoir based on Fisher’s one-woman autobiographical show. Originally published in 2008.",
+    "price": "0.00",
+    "title": "WISHFUL DRINKING",
+    "author": "Carrie Fisher",
+    "contributor": "by Carrie Fisher",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781439102251.jpg",
+    "book_image_width": 315,
+    "book_image_height": 495,
+    "amazon_product_url": "http://www.amazon.com/Wishful-Drinking-Carrie-Fisher-ebook/dp/B001NLKS02?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "https://www.nytimes.com/2009/01/02/books/02book.html",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1439153809",
+    "isbn13": "9781439153802"
+    },
+    {
+    "isbn10": "143915371X",
+    "isbn13": "9781439153710"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "http://www.amazon.com/Wishful-Drinking-Carrie-Fisher-ebook/dp/B001NLKS02?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781439153802?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781439153802"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FWISHFUL%252BDRINKING%252FCarrie%252BFisher%252F9781439153802&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DWISHFUL%252BDRINKING%252BCarrie%252BFisher"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781439153802&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DWISHFUL%2BDRINKING"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781439153802%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DWISHFUL%2BDRINKING%2BCarrie%2BFisher%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/c4f1760c-3ae8-56c5-a08c-50d3d3f6212a"
+    },
+    {
+    "rank": 8,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1617750255",
+    "primary_isbn13": "9781617750250",
+    "publisher": "Akashic",
+    "description": "A children's book parody for tired parents. Originally published in 2011.",
+    "price": "0.00",
+    "title": "GO THE -- TO SLEEP",
+    "author": "Adam Mansbach",
+    "contributor": "by Adam Mansbach. Illustrated by Ricardo Cortés",
+    "contributor_note": "Illustrated by Ricardo Cortés  ",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781617750250.jpg",
+    "book_image_width": 330,
+    "book_image_height": 251,
+    "amazon_product_url": "http://www.amazon.com/Go-F-Sleep-Adam-Mansbach/dp/1617750255?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1617750255",
+    "isbn13": "9781617750250"
+    },
+    {
+    "isbn10": "145322761X",
+    "isbn13": "9781453227619"
+    },
+    {
+    "isbn10": "145584165X",
+    "isbn13": "9781455841653"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "http://www.amazon.com/Go-F-Sleep-Adam-Mansbach/dp/1617750255?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781617750250?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781617750250"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FGO%252BTHE%252B--%252BTO%252BSLEEP%252FAdam%252BMansbach%252F9781617750250&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DGO%252BTHE%252B--%252BTO%252BSLEEP%252BAdam%252BMansbach"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781617750250&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DGO%2BTHE%2B--%2BTO%2BSLEEP"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781617750250%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DGO%2BTHE%2B--%2BTO%2BSLEEP%2BAdam%2BMansbach%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/2a58b24d-b06f-5779-8d84-1a7aec66db37"
+    },
+    {
+    "rank": 9,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "None",
+    "primary_isbn13": "9780804138154",
+    "publisher": "Crown Archetype",
+    "description": "More personal essays from the comedian and actress, the creator of \"The Mindy Project.\"",
+    "price": "0.00",
+    "title": "WHY NOT ME?",
+    "author": "Mindy Kaling",
+    "contributor": "by Mindy Kaling",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9780804138154.jpg",
+    "book_image_width": 328,
+    "book_image_height": 495,
+    "amazon_product_url": "http://www.amazon.com/Why-Not-Me-Mindy-Kaling-ebook/dp/B00N6PEMZK?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "0804138141",
+    "isbn13": "9780804138147"
+    },
+    {
+    "isbn10": "0553551744",
+    "isbn13": "9780553551747"
+    },
+    {
+    "isbn10": "0804138168",
+    "isbn13": "9780804138161"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "http://www.amazon.com/Why-Not-Me-Mindy-Kaling-ebook/dp/B00N6PEMZK?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9780804138154?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9780804138154"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FWHY%252BNOT%252BME%25253F%252FMindy%252BKaling%252F9780804138154&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DWHY%252BNOT%252BME%25253F%252BMindy%252BKaling"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9780804138154&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DWHY%2BNOT%2BME%253F"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9780804138154%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DWHY%2BNOT%2BME%253F%2BMindy%2BKaling%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/b77f6c13-bf9c-57bb-a206-fd01da8c2f1c"
+    },
+    {
+    "rank": 10,
+    "rank_last_week": 0,
+    "weeks_on_list": 0,
+    "asterisk": 0,
+    "dagger": 0,
+    "primary_isbn10": "1250115639",
+    "primary_isbn13": "9781250115638",
+    "publisher": "Flatiron",
+    "description": "From Woody Allen to Warren Zevon, an alphabetical list (with anecdotes) of the celebrities Griffin has met during her years in show business.",
+    "price": "0.00",
+    "title": "KATHY GRIFFIN'S CELEBRITY RUN-INS",
+    "author": "Kathy Griffin",
+    "contributor": "by Kathy Griffin",
+    "contributor_note": "",
+    "book_image": "https://storage.googleapis.com/du-prd/books/images/9781250115652.jpg",
+    "book_image_width": 326,
+    "book_image_height": 495,
+    "amazon_product_url": "https://www.amazon.com/Kathy-Griffins-Celebrity-Run-Ins-Z-ebook/dp/B01GNYVPOQ?tag=NYTBSREV-20",
+    "age_group": "",
+    "book_review_link": "",
+    "first_chapter_link": "",
+    "sunday_review_link": "",
+    "article_chapter_link": "",
+    "isbns": [
+    {
+    "isbn10": "1250115655",
+    "isbn13": "9781250115652"
+    },
+    {
+    "isbn10": "1250115639",
+    "isbn13": "9781250115638"
+    }
+    ],
+    "buy_links": [
+    {
+    "name": "Amazon",
+    "url": "https://www.amazon.com/Kathy-Griffins-Celebrity-Run-Ins-Z-ebook/dp/B01GNYVPOQ?tag=NYTBSREV-20"
+    },
+    {
+    "name": "Apple Books",
+    "url": "https://goto.applebooks.apple/9781250115638?at=10lIEQ"
+    },
+    {
+    "name": "Barnes and Noble",
+    "url": "https://www.anrdoezrs.net/click-7990613-11819508?url=https%3A%2F%2Fwww.barnesandnoble.com%2Fw%2F%3Fean%3D9781250115638"
+    },
+    {
+    "name": "Books-A-Million",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fp%252FKATHY%252BGRIFFIN%252527S%252BCELEBRITY%252BRUN-INS%252FKathy%252BGriffin%252F9781250115638&url2=https%3A%2F%2Fwww.anrdoezrs.net%2Fclick-7990613-35140%3Furl%3Dhttps%253A%252F%252Fwww.booksamillion.com%252Fsearch%253Fquery%253DKATHY%252BGRIFFIN%252527S%252BCELEBRITY%252BRUN-INS%252BKathy%252BGriffin"
+    },
+    {
+    "name": "Bookshop",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fbookshop.org%2Fa%2F3546%2F9781250115638&url2=https%3A%2F%2Fbookshop.org%2Fbooks%3Faffiliate%3D3546%26keywords%3DKATHY%2BGRIFFIN%2527S%2BCELEBRITY%2BRUN-INS"
+    },
+    {
+    "name": "IndieBound",
+    "url": "https://du-gae-books-dot-nyt-du-prd.appspot.com/redirect?url1=https%3A%2F%2Fwww.indiebound.org%2Fbook%2F9781250115638%3Faff%3DNYT&url2=https%3A%2F%2Fwww.indiebound.org%2Fsearch%2Fbook%3Fkeys%3DKATHY%2BGRIFFIN%2527S%2BCELEBRITY%2BRUN-INS%2BKathy%2BGriffin%26aff%3DNYT"
+    }
+    ],
+    "book_uri": "nyt://book/c892026d-a703-59cd-872a-667eda2dd4d4"
+    }
+    ],
+    "corrections": []
+    }
+    }

@@ -9,16 +9,25 @@ const Book = () => {
     const endpoint = currentUrl.match(/([^\/]+$)/g);
     const url = endpoint ? endpoint[0] : '/';
     console.log(url);
+  
     const [numberOfBooks, setNumberOfBooks] = useState(5);
 
     let data = useSelector(selectBookData);
     console.log(data)
 
     useEffect(() => {
-        if (url === 'discover') {
+        if (currentUrl.includes('discover')) {
             setNumberOfBooks(15)
-        }
+        } if (currentUrl.includes('genres')) {
+            setNumberOfBooks(15)
+        } 
     }, [])
+
+    // useEffect(() => {
+    //     if (url === 'discover') {
+    //         setNumberOfBooks(15)
+    //     }
+    // }, [])
 
     return (
         <> 
