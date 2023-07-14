@@ -67,7 +67,6 @@ server.post('/api/signup', async (req, res) => {
         const salt = await bcrypt.genSalt(10);
         const hashedpassword = await bcrypt.hash(password, salt);
         await db.query(`INSERT INTO users (name, username, password, email, birthday) VALUES ('${name}', '${username}', '${hashedpassword}', '${email}',  '${birthday}')`);
-        console.log('running else');
         res.json({
             username: username,
             isAuthenticated: true,
@@ -88,31 +87,34 @@ server.post('/api/signin', async (req, res) => {
         console.log(password);
         console.log(hashedpassword)
         const matchup = await bcrypt.compare(password, hashedpassword[0].password);
-        if (matchup) {
+        console.log(matchup)
+        if (matchup === true) {
             res.json({
                 username: username,
                 isAuthenticated: true,
                 redirectTo: '/account'
             })
         }
+    } else if (matchup === false) {
+        res.json({message: 'password is incorrect'})
     } else {
         res.json({message: 'user does not exist'})
     }
 })
 
-server.post('/api/favoriteGenres', async (req, res) => {
-    let { username } = req.body;
-    let userId = await db.query(`SELECT personid FROM users WHERE username='${username}'`)
-    let favoriteGenres = await db.query(`SELECT favoritegenres FROM favorites WHERE personid='${userId}'`);
-    res.json(favoriteGenres);
-})
 
-server.get('/account', async (req, res) => {
-    let { username } = req.body;
-    let userId = await db.query(`SELECT personid FROM users where username='${username}`);
+server.post('/api/account', async (req, res) => {
+    let { _username } = req.body;
+    console.log(_username);
+    let userIdQuery = await db.query(`SELECT personid FROM users where username='${_username}'`);
+    console.log(userIdQuery);
+    console.log(userIdQuery[0]);
+    let userId = userIdQuery[0].personid;
     let favorites = await db.query(`SELECT favoritegenres from favorites WHERE personid='${userId}'`);
-    if (favorites && favorites[0].length > 0) {
+    if (favorites && favorites.length > 0) {
         res.json(favorites);
+    } else {
+        res.json({message: "return modal"})
     }
 
 })

@@ -6,24 +6,28 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Account = () => {    
     const dispatch = useDispatch();
+    const _username = useSelector(username);
     const currentUrl = location.href;
     const url = currentUrl.match(/([^\/]+$)/g)[0];
     useEffect(() => {
         if (url === 'account') {
-                fetch(`/api/favoriteGenres`, {
+            console.log('hi', _username)
+                fetch(`/api/account`, {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({username})
+                    body: JSON.stringify({_username})
                 })
                 .then((response) => response.json())
                 .then((response) => {
+                    if (response && response.favorites) {
                     let favorites = response.genres.split(',');
                     dispatch(setFavorite(favorites));
+                    } else {
+                        console.log(response.message)
+                    }
                 })
-
-            
         }
     }, [])
     return (

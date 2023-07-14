@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
     let location = useNavigate();
-    const { pathname } = location;
     const [name, setName] = useState();
     const [username, setUser] = useState();
     const [password, setPass] = useState();
@@ -61,6 +60,7 @@ const SignUp = () => {
         })
         clearUseState();
     }
+    //erasing the value for the inputs as it throws an error
     return (
         <>
             <div className='form-container'>
@@ -69,34 +69,31 @@ const SignUp = () => {
                     <input 
                         type='text' 
                         placeholder="Name" 
-                        id='name' value={name} 
+                        id='name'  
                         onChange={handleName}
                     />
                     <input 
                         type='text' 
                         placeholder='Username' 
-                        id='username' value={username} 
+                        id='username' 
                         onChange={handleUsername}
                     />
                     <input 
                         type='text' 
                         placeholder='Email' 
                         id='email' 
-                        value={email} 
                         onChange={handleEmail} 
                     />
                     <input 
                         type='text' 
                         placeholder="Password"
                         id='password' 
-                        value={password} 
                         onChange={handlePassword}
                     />
                     <input 
                         type='text' 
                         placeholder='Birthday' 
                         id='birthday' 
-                        value={birthday} 
                         onChange={handleBday}
                     />
                     <div className='form-button'>
