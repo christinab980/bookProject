@@ -37,7 +37,7 @@ server.get('/', (req, res) => {
     res.json({message: 'heartbeat'})
 })
 
-server.post('/signup', async (req, res) => {
+server.post('/api/signup', async (req, res) => {
     const {name, username, email, password, birthday} = req.body;
     /* The line `let search = await db.query(SELECT * FROM (users) WHERE (newUsername === username));`
     is attempting to perform a database query to search for a user with a matching `newUsername` and
@@ -89,6 +89,13 @@ server.post('/api/signin', async (req, res) => {
     } else {
         res.json({message: 'user does not exist'})
     }
+})
+
+server.get('/api/favoriteGenres', async (req, res) => {
+    let { username } = req.body;
+    let userId = await db.query(`SELECT personid FROM users WHERE username='${username}'`)
+    let favoriteGenres = await db.query(`SELECT favoritegenres FROM favorites WHERE personid='${userId}'`);
+    res.json(favoriteGenres);
 })
 
 server.get('/account', async (req, res) => {

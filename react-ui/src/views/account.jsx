@@ -1,20 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { setFavorite } from "../features/favoritesSlice";
-import { addUsernameToStore } from "../features/usernameSlice";
+import { username } from "../features/usernameSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-const Account = () => {
+const Account = () => {    
     const dispatch = useDispatch();
+    const currentUrl = location.href;
+    const url = currentUrl.match(/([^\/]+$)/g)[0];
+    useEffect(() => {
+        if (url === 'account') {
+                fetch(`/api/favoriteGenres`, {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(username)
+                })
+                .then((response) => response.json())
+                .then((result) => {
+                    let favorites = result.genres.split(',');
+                    dispatch(setFavorite(favorites));
+                })
 
-    let [userFavorites, setUserFavorite] = useState('');
-    let [userName, setUserName] = useState('');
-    // let username = res.username;
-    
-    const sendUsername =  dispatch(addUsernameToStore(userName));
-    let faves = useSelector(setFavorite);
-    setUserFavorite(faves);
-
+            
+        }
+    }, [])
     return (
         <h1>account</h1>
     )
