@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchData = createAsyncThunk("favorites", async() => {
-    let dbCall = await fetch('/account');
+    let dbCall = await fetch('/api/account');
     let data = dbCall.json();
     console.log(data);
     return data;

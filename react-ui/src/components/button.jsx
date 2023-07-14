@@ -88,7 +88,7 @@ const Button = ({bookRank, url, book}) => {
                     </label>
                 </div>}
             </div> 
-    }
+        )}
         </>
     )
 }

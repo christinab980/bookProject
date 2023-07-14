@@ -2,11 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import { addUsernameToStore } from '../features/usernameSlice';
 import { useDispatch } from 'react-redux';
-import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
-    let location = useLocation();
-    const { pathname } = location;
+    let location = useNavigate();
     const [name, setName] = useState();
     const [username, setUser] = useState();
     const [password, setPass] = useState();
@@ -57,10 +56,11 @@ const SignUp = () => {
         .then((response) => {
             console.log(response)
             dispatch(addUsernameToStore(response.username));
-            pathname.replace(response.redirectTo);
+            location(response.redirectTo);
         })
         clearUseState();
     }
+    //erasing the value for the inputs as it throws an error
     return (
         <>
             <div className='form-container'>
@@ -69,34 +69,31 @@ const SignUp = () => {
                     <input 
                         type='text' 
                         placeholder="Name" 
-                        id='name' value={name} 
+                        id='name'  
                         onChange={handleName}
                     />
                     <input 
                         type='text' 
                         placeholder='Username' 
-                        id='username' value={username} 
+                        id='username' 
                         onChange={handleUsername}
                     />
                     <input 
                         type='text' 
                         placeholder='Email' 
                         id='email' 
-                        value={email} 
                         onChange={handleEmail} 
                     />
                     <input 
                         type='text' 
                         placeholder="Password"
                         id='password' 
-                        value={password} 
                         onChange={handlePassword}
                     />
                     <input 
                         type='text' 
                         placeholder='Birthday' 
                         id='birthday' 
-                        value={birthday} 
                         onChange={handleBday}
                     />
                     <div className='form-button'>
