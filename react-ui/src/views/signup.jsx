@@ -1,12 +1,18 @@
 import React from 'react';
 import { useState } from 'react';
+import { addUsernameToStore } from '../features/usernameSlice';
+import { useDispatch } from 'react-redux';
+import { useLocation } from 'react-router-dom';
 
 const SignUp = () => {
+    let location = useLocation();
+    const { pathname } = location;
     const [name, setName] = useState();
     const [username, setUser] = useState();
     const [password, setPass] = useState();
     const [email, setEmail] = useState();
     const [birthday, setBirthday] = useState();
+    const dispatch = useDispatch();
     
     const clearUseState = () => {
         setName('');
@@ -17,40 +23,41 @@ const SignUp = () => {
     }
 
     const handleName = e => {
-        setAttemptedName(e.target.value)
+        setName(e.target.value)
     }
 
     const handleUsername = e => {
-        setAttemptedUser(e.target.value)
+        setUser(e.target.value)
     }
 
     const handlePassword = e => {
-        setAttemptedPass(e.target.value)
+        setPass(e.target.value)
     }
 
     const handleEmail = e => {
-        setAttemptedEmail(e.target.value)
+        setEmail(e.target.value)
     }
 
     const handleBday = e => {
-        setAttemptedBday(e.target.value)
+        setBirthday(e.target.value)
     }
 
     const handleSubmit = e => {
         e.preventDefault();
 
-        fetch('/signup', {
+        fetch('/api/signup', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
             },
             // TODO fix the JSON formatting for the body after full link up
-            body: JSON.stringify(name, username, email, password, birthday)
+            body: JSON.stringify({name, username, email, password, birthday})
         })
         .then((response) => response.json())
-        .then((result) => {
-            dispatch(addUsernameToStore(result.username));
-            location.href(result.redirectTo)
+        .then((response) => {
+            console.log(response)
+            dispatch(addUsernameToStore(response.username));
+            pathname.replace(response.redirectTo);
         })
         clearUseState();
     }
