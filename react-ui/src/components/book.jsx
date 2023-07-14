@@ -6,6 +6,10 @@ import Button from "./button"
 
 const Book = () => {
     const currentUrl = location.href;
+    const endpoint = currentUrl.match(/([^\/]+$)/g);
+    const url = endpoint ? endpoint[0] : '/';
+    console.log(url);
+  
     const [numberOfBooks, setNumberOfBooks] = useState(5);
 
     let data = useSelector(selectBookData);

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import { username } from '../features/usernameSlice';
 import { useDispatch } from 'react-redux';
 import { addUsernameToStore } from '../features/usernameSlice';
 
@@ -31,12 +30,13 @@ const SignIn = () => {
                 'Content-Type': 'application/json'
             },
             // TODO fix the JSON formatting for the body after full link up
-            body: JSON.stringify(username, email, password)
+            body: JSON.stringify({username, email, password})
         })
         .then((response) => response.json())
-        .then((result) => {
-            dispatch(addUsernameToStore(result.username));
-            location.href(result.redirectTo)
+        .then((response) => {
+            console.log(response);
+            dispatch(addUsernameToStore(response.username));
+            location.href(response.redirectTo)
         })
         setUsername('');
         setEmail('');
