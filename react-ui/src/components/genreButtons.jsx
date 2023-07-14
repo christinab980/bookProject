@@ -31,7 +31,7 @@ const Genre = () => {
 
     function handleGenre (e) {
         let category = e.target.getAttribute("data-attribute")
-        setGenres(`${genres} += ,${category}`);
+        setGenres(`${genres} ${category}`);
     }
     
     return (
