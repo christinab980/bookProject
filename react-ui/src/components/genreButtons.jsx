@@ -14,7 +14,6 @@ const Genre = () => {
     
     return (
         <>
-            <h2 className='y-wrap genre-buttons-heading'>Popular Genres</h2>
             <div className="genre-buttons">
                 <a 
                     onClick={handleGenre} 

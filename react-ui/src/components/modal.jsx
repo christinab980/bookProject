@@ -4,7 +4,7 @@ import GenreButtons from "./genreButtons"
 const Modal = (action) => {
     return (
         <>
-            <div>
+            <div className='modal'>
                 <GenreButtons />
             </div>
         </>
