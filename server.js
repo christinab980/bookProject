@@ -37,7 +37,7 @@ server.get('/', (req, res) => {
     res.json({message: 'heartbeat'})
 })
 
-server.post('/signup', async (req, res) => {
+server.post('/api/signup', async (req, res) => {
     const {name, username, email, password, birthday} = req.body;
     /* The line `let search = await db.query(SELECT * FROM (users) WHERE (newUsername === username));`
     is attempting to perform a database query to search for a user with a matching `newUsername` and

@@ -4,15 +4,13 @@ import { setFavorite } from "../features/favoritesSlice";
 import { username } from "../features/usernameSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-const Account = () => {
+const Account = () => {    
     const dispatch = useDispatch();
     const currentUrl = location.href;
-    console.log('currentUrl');
     const url = currentUrl.match(/([^\/]+$)/g)[0];
     useEffect(() => {
         if (url === 'account') {
-            const findFaves = () => {
-                fetch(`${currentUrl}/api/favoriteGenres`, {
+                fetch(`/api/favoriteGenres`, {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json'
@@ -25,17 +23,9 @@ const Account = () => {
                     dispatch(setFavorite(favorites));
                 })
 
-            }
+            
         }
     }, [])
-    const findFaves = () => {
-        const search = fetch()
-    }
-
-    let [userFavorites, setUserFavorite] = useState('');
-    let faves = useSelector(setFavorite);
-    setUserFavorite(faves);
-    
     return (
         <h1>account</h1>
     )

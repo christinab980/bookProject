@@ -1,13 +1,18 @@
-import { response } from 'express';
 import React from 'react';
 import { useState } from 'react';
+import { addUsernameToStore } from '../features/usernameSlice';
+import { useDispatch } from 'react-redux';
+import { useLocation } from 'react-router-dom';
 
 const SignUp = () => {
+    let location = useLocation();
+    const { pathname } = location;
     const [name, setName] = useState();
     const [username, setUser] = useState();
     const [password, setPass] = useState();
     const [email, setEmail] = useState();
     const [birthday, setBirthday] = useState();
+    const dispatch = useDispatch();
     
     const clearUseState = () => {
         setName('');
@@ -40,19 +45,19 @@ const SignUp = () => {
     const handleSubmit = e => {
         e.preventDefault();
 
-        fetch('/signup', {
+        fetch('/api/signup', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
             },
             // TODO fix the JSON formatting for the body after full link up
-            body: JSON.stringify(name, username, email, password, birthday)
+            body: JSON.stringify({name, username, email, password, birthday})
         })
         .then((response) => response.json())
-        .then((result) => {
+        .then((response) => {
             console.log(response)
-            dispatch(addUsernameToStore(result.username));
-            location.href(result.redirectTo)
+            dispatch(addUsernameToStore(response.username));
+            pathname.replace(response.redirectTo);
         })
         clearUseState();
     }
