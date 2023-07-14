@@ -11,7 +11,7 @@ const Account = () => {
     const _favorites = useSelector(favorites);
     const currentUrl = location.href;
     const url = currentUrl.match(/([^\/]+$)/g)[0];
-    const [favesLength, setFavesLength] = useState();
+    // const [favesLength, setFavesLength] = useState();
     useEffect(() => {
         if (url === 'account') {
             console.log('hi', _username)
@@ -27,8 +27,9 @@ const Account = () => {
                     console.log(response);
                     if (response) {
                     let favorites = response[0].favoritegenres;
+                    let favoriteSplit = favorites.split(' ');
                     console.log(response);
-                    dispatch(setFavorite(favorites));
+                    dispatch(setFavorite(favoriteSplit));
 
                 }
                 })

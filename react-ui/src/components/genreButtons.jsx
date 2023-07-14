@@ -15,8 +15,8 @@ const Genre = () => {
     function handleSubmit() {
         // commenting out line 14 as there are ways to utilize the favorites slice for genre recomms, we can reinstate it later when we find a need
         // dispatch(setGenreRecommendations(category))
-        dispatch(setFavorite(genres));
-        fetch('/api/setFavorites', {
+        dispatch(setGenreRecommendations(genres));
+        fetch('/api/setFavoriteGenres', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

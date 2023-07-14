@@ -8,7 +8,7 @@ export const fetchData = createAsyncThunk("haveRead", async() => {
 })
 
 export const genreTableSlice = createSlice({
-    name: "Genre-Table",
+    name: "Genres",
     initialState: [],
     reducers: {
         setGenreRecommendations(state, action) {
@@ -22,6 +22,8 @@ export const genreTableSlice = createSlice({
         })
     }
 })
+
+export const genres = state => state.Genres;
 
 export const { setGenreRecommendations } = genreTableSlice.actions;
 
