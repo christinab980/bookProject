@@ -5,6 +5,7 @@ import favoritesSlice from "../features/favoritesSlice";
 import haveReadSlice from "../features/haveReadSlice"
 import genreTable from "../features/genreTable";
 
+
 export default configureStore({
     reducer: {
         bookData: bookReducer,
@@ -12,5 +13,4 @@ export default configureStore({
         favorites: favoritesSlice,
         read: haveReadSlice,
         genreRecommendation: genreTable 
-    }
 })
