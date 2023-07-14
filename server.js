@@ -94,12 +94,12 @@ server.post('/api/signin', async (req, res) => {
                 isAuthenticated: true,
                 redirectTo: '/account'
             })
-        }
-    } else if (matchup === false) {
+        } else if (matchup === false) {
         res.json({message: 'password is incorrect'})
     } else {
         res.json({message: 'user does not exist'})
     }
+}
 })
 
 
