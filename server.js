@@ -42,7 +42,7 @@ server.post('/api/setFavorites', async (req, res) => {
     let userIdSearch = await db.query(`SELECT personid FROM users WHERE username='${username}'`);
     let userId = userIdSearch[0].personid;
     db.query(`INSERT INTO favorites (personid, username, favoritegenres, favoritebooks) VALUES ('${userId}', '${username}', '${genres}', '${books}')`);
-    res.json({'message': 'favorites set'})
+    res.json({message: 'favorites set'})
 
 })
 
