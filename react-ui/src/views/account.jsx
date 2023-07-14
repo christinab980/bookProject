@@ -8,6 +8,7 @@ import Modal from '../components/modal.jsx';
 const Account = () => {    
     const dispatch = useDispatch();
     const _username = useSelector(username);
+    const _favorites = useSelector(favorites);
     const currentUrl = location.href;
     const url = currentUrl.match(/([^\/]+$)/g)[0];
     const [favesLength, setFavesLength] = useState();
@@ -23,19 +24,20 @@ const Account = () => {
                 })
                 .then((response) => response.json())
                 .then((response) => {
-                    if (response && response.favorites) {
-                    let favorites = response.genres.split(',');
+                    console.log(response);
+                    if (response) {
+                    let favorites = response[0].favoritegenres;
+                    console.log(response);
                     dispatch(setFavorite(favorites));
-                    } else {
-                        setFavesLength(0)
-                    }
+
+                }
                 })
         }
     }, [])
     return (
         <>
             <h1>account</h1>
-            {favesLength > 0 ? (
+            {_favorites.length > 0 ? (
                 <div>account page</div>
             ):(
                 <Modal />

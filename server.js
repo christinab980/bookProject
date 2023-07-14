@@ -38,10 +38,10 @@ server.get('/', (req, res) => {
 })
 
 server.post('/api/setFavorites', async (req, res) => {
-    const { username, genres, books } = req.body;
-    let userIdSearch = await db.query(`SELECT personid FROM users WHERE username='${username}'`);
+    const { _username, genres, books } = req.body;
+    let userIdSearch = await db.query(`SELECT personid FROM users WHERE username='${_username}'`);
     let userId = userIdSearch[0].personid;
-    db.query(`INSERT INTO favorites (personid, username, favoritegenres, favoritebooks) VALUES ('${userId}', '${username}', '${genres}', '${books}')`);
+    db.query(`INSERT INTO favorites (personid, username, favoritegenres, favoritebooks) VALUES ('${userId}', '${_username}', '${genres}', '${books}')`);
     res.json({message: 'favorites set'})
 
 })
@@ -113,6 +113,7 @@ server.post('/api/account', async (req, res) => {
     let favorites = await db.query(`SELECT favoritegenres from favorites WHERE personid='${userId}'`);
     if (favorites && favorites.length > 0) {
         res.json(favorites);
+        console.log(favorites);
     } else {
         res.json({message: "return modal"})
     }
