@@ -1,9 +1,12 @@
 import React from 'react';
+import GenreButtons from "./genreButtons"
 
 const Modal = (action) => {
     return (
         <>
-        <div onClick={action}></div>
+            <div>
+                <GenreButtons />
+            </div>
         </>
     )
 }

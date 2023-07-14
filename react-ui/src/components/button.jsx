@@ -4,8 +4,6 @@ import { setFavorite } from '../features/favoritesSlice';
 import { setHaveRead } from '../features/haveReadSlice';
 import { username } from "../features/usernameSlice"
 
-
-
 const Button = ({bookRank, url, book}) => {
 
     let dispatch = useDispatch()

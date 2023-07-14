@@ -4,77 +4,91 @@
   margin: 0;
   padding: 0;
 }
-
 body,
 html {
   height: 100%;
 }
-
 main {
   display: flex;
   flex: 1;
 }
-
 .root {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-
 /* footer stylings  */
-
 footer {
   background-color: #3f91ab;
   color: white;
   padding: 10px;
+  margin-top: 10%;
+  margin-top: 2%;
 }
 
 footer img {
   height: 40px;
   margin-left: 10px;
 }
-
 /* header stylings  */
-
 header {
   padding: 10px 0;
 }
-
 .logo {
   height: 90px;
 }
-
 /* navigation stylings  */
-
 .y-wrap {
   margin: 0 auto;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 .y-navs {
   display: flex;
   align-items: center;
   width: 90%;
 }
-
 .y-navs a:first-of-type {
   flex: 1;
 }
-
 .y-navs a:not(:first-of-type) {
   margin: 0 0 0 16px;
 }
-
 /* landing stylings  */
-
 .landing-container, .discover-container{
   display: flex;
   gap: 25px;
   justify-content: center;
+}
+
+.landing-book-heading {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #215466;
+}
+
+.genre-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 5% 30px;
+}
+
+.genre-buttons a {
+  padding: 20px;
+  background-color: #3f91ab;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.genre-buttons-heading {
+  margin-top: 5%;
+  color: #215466;
 }
 
 .hero-image-landing {
@@ -90,83 +104,156 @@ a {
   align-items: center;
   text-align: center;
 }
-
 .hero-text {
   padding: 15px;
   background-color: #fff;
   border-radius: 30px;
   color:#215466
 }
-
 .hero-text p {
   margin: 10px
 }
-
 .book-listing{
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-
 /* book card stylings  */
-
 .book-container {
   display: flex;
   flex-direction: column;
   width: 150px;
   margin: 10px 0;
-  height: 310px;
+  height: 350px;
 }
 
 .book-description {
   flex: 1;
 }
-
 .book-img {
   text-align: center;
 }
-
 .book-img img{
   height: 150px;
 }
-
 .book-title, .book-author, .book-description, .book-buy-button {
   font-size: .8rem;
   color: #215466;
+}
+.book-title, .book-author, .book-buy-button {
   text-align: center;
 }
-
 .book-title {
   text-transform: capitalize;
   font-weight: 600;
 }
-
 .book-description, .book-buy-button {
   margin-top: 8px;
 }
-
+.book-description {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .book-author {
   color: #5e90a0;
 }
-
-.book-buy-button {
+.book-buy-button, .dropdown-button, form button {
   padding: 10px;
   text-align: center;
   background-color: #3f91ab;
   color: aliceblue;
   border-radius: 20px;
 }
-
 /* discover stylings  */
-
 .discover-heading { 
   text-align: center;
   color:#215466;
   margin: 30px 0;
 }
-
 .discover-container {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 30px;
+}
+/* Dropdown Button  */
+.dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.dropdown-menu {
+  position: absolute;
+  left: 35px;
+  top: calc(100% + .25rem);
+  background-color: #fff;
+  padding: .75rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
+  gap: 10px;
+  color: #215466;
+}
+.dropdown-button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Sign-In Form */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px;
+  width: 500px;
+}
+input {
+  font-size: 1.1rem;
+  border: 1px solid lightgray;
+  height: 2rem;
+  padding: 10px;
+}
+form button {
+  border: none;
+  width: 150px;
+}
+form a {
+  text-align: center;
+  cursor: pointer;
+  color: slategray;
+}
+.form-a:hover, .y-navs a:hover {
+  color: #215466;
+}
+/* .form-a:after, .y-navs a:after {
+  content: "" ;
+  position: absolute;
+  background-color: #215466;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 10px;
+  transition: .3s;
+}
+.form-a:hover:after, .y-navs a:hover:after {
+  width: 100%;
+} */
+.form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
