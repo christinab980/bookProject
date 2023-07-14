@@ -1,93 +1,98 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useDispatch } from 'react-redux';
 import { setGenreRecommendations } from "../features/genreTable"
 
 const Genre = () => {
+    const [btnClicked, setBtnClicked] = useState(false);
+    const [isActive, setIsActive] = useState("")
 
-    let dispatch = useDispatch()
+    let dispatch = useDispatch();
 
-    function handleGenre(e) {
-        let category = e.target.getAttribute("data-attribute")
+    function handleGenre(clickedGenre) {
+        setBtnClicked(true)
+        setIsActive(clickedGenre)
+
+        let category = clickedGenre
         dispatch(setGenreRecommendations(category))
-        console.log(category)
+        console.log(isActive)
     }
     
+
     return (
         <>
-            <h2 className='y-wrap genre-buttons-heading'>Popular Genres</h2>
             <div className="genre-buttons">
-                <a 
-                    onClick={handleGenre} 
-                    data-attribute="family" 
-                    href='genres'>
+                <button 
+                    onClick={() => handleGenre("family")} 
+                    className={isActive === "family" ? "active" : " "}
+                    data-attribute="family" >
                         Family
-                </a>
-                <a 
-                    onClick={handleGenre} 
-                    href='/genres' 
+                </button>
+                <button
+                    onClick={() => handleGenre("fiction")} 
+                    className={isActive === "fiction" ? "active" : " "}
                     data-attribute="fiction">
                         Fiction
-                </a>
-                <a 
-                    onClick={handleGenre} 
-                    href='/genres' 
+                </button>
+                <button 
+                    onClick={() => handleGenre("non-fiction")} 
+                    className={isActive === "non-fiction" ? "active" : " "}
                     data-attribute="non-fiction">
                         Non-Fiction 
-                </a>
-                <a 
-                    onClick= {handleGenre} 
-                    href='/genres' 
+                </button>
+                <button
+                    onClick={() => handleGenre("manga")} 
+                    className={isActive === "manga" ? "active" : " "}
                     data-attribute="manga">
                         Manga
-                </a>
-                <a 
-                    onClick= {handleGenre} 
-                    href='/genres' 
+                </button>
+                <button 
+                    onClick={() => handleGenre("science")} 
+                    className={isActive === "science" ? "active" : " "}
                     data-attribute="science">
                         Science
-                </a>
-                <a 
-                    onClick= {handleGenre} 
-                    href='/genres' 
+                </button>
+                <button 
+                    onClick={() => handleGenre("sports")} 
+                    className={isActive === "sports" ? "active" : " "}
                     data-attribute="sports">
                         Sports
-                </a>
-                <a 
-                    onClick= {handleGenre} 
-                    href='/genres' 
+                </button>
+                <button 
+                    onClick={() => handleGenre("young-adults")} 
+                    className={isActive === "young-adults" ? "active" : " "}
                     data-attribute="young-adults">
                         Young Adults
-                </a>
-                <a 
-                    onClick= {handleGenre} 
-                    href='/genres' 
+                </button>
+                <button
+                    onClick={() => handleGenre("travel")} 
+                    className={isActive === "travel" ? "active" : " "}
                     data-attribute="travel">
                         Travel
-                </a>
-                <a  
-                    onClick= {handleGenre} 
-                    href='/genres' 
+                </button>
+                <button 
+                    onClick={() => handleGenre("education")} 
+                    className={isActive === "education" ? "active" : " "}
                     data-attribute="education">
                         Education
-                </a>
-                <a 
-                    onClick= {handleGenre} 
-                    href='/genres' 
+                </button>
+                <button 
+                    onClick={() => handleGenre("paperback-advice")} 
+                    className={isActive === "paperback-advice" ? "active" : " "}
                     data-attribute="paperback-advice">
                         Advice
-                </a>
-                <a 
-                    onClick= {handleGenre} 
-                    href='/genres' 
+                </button>
+                <button 
+                    onClick={() => handleGenre("food-and-fitness")} 
+                    className={isActive === "food-and-fitness" ? "active" : " "}
                     data-attribute="food-and-fitness">
                         Food and Fitness
-                </a>
-                <a 
-                    onClick= {handleGenre} 
-                    href='/genres' 
+                </button>
+                <button 
+                    onClick={() => handleGenre("humor")} 
+                    className={isActive === "humor" ? "active" : " "}
                     data-attribute="humor">
                         Humor
-                </a>
+                </button>
             </div>
         </>
     )

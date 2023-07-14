@@ -3,6 +3,7 @@ import axios from "axios";
 import { setFavorite } from "../features/favoritesSlice";
 import { username } from "../features/usernameSlice";
 import { useDispatch, useSelector } from "react-redux";
+import Modal from "../components/modal"
 
 const Account = () => {    
     const dispatch = useDispatch();
@@ -31,7 +32,8 @@ const Account = () => {
         }
     }, [])
     return (
-        <h1>account</h1>
+        
+        <Modal />
     )
 }
 
