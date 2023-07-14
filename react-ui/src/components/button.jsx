@@ -4,7 +4,6 @@ import { setFavorite } from '../features/favoritesSlice';
 import { setHaveRead } from '../features/haveReadSlice';
 import { username } from "../features/usernameSlice"
 
-
 const Button = ({bookRank, url, book}) => {
 
     let dispatch = useDispatch()
@@ -20,7 +19,6 @@ const Button = ({bookRank, url, book}) => {
     const [ favorite, setFavoriteCheckBox ] = useState(false);
     const [ haveReadCheckBox, setHaveReadCheckBox ] = useState(false);
     const [ loggedIn, setLoggedIn] = useState(false);
-
 
     function handleOptions() {
         setOpenDropDown(!openDropDown)

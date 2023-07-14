@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { username } from '../features/usernameSlice';
 import { useDispatch } from 'react-redux';
 import { addUsernameToStore } from '../features/usernameSlice';
 

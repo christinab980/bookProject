@@ -126,6 +126,10 @@ a {
   margin: 10px 0;
   height: 350px;
 }
+
+.book-description {
+  flex: 1;
+}
 .book-img {
   text-align: center;
 }
