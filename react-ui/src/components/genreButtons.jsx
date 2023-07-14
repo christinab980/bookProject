@@ -1,92 +1,96 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useDispatch } from 'react-redux';
 import { setGenreRecommendations } from "../features/genreTable"
 
 const Genre = () => {
+    const [btnClicked, setBtnClicked] = useState(false);
 
-    let dispatch = useDispatch()
+    let dispatch = useDispatch();
 
     function handleGenre(e) {
+        setBtnClicked(!btnClicked)
+        console.log("btn", btnClicked)
         let category = e.target.getAttribute("data-attribute")
         dispatch(setGenreRecommendations(category))
-        console.log(category)
     }
     
+    let toggleClassCheck = btnClicked ? "active" : '';
+
     return (
         <>
             <div className="genre-buttons">
-                <a 
+                <button 
+                    className={`${toggleClassCheck}`}
                     onClick={handleGenre} 
-                    data-attribute="family" 
-                    href='genres'>
+                    data-attribute="family" >
                         Family
-                </a>
-                <a 
+                </button>
+                <button
+                    className={`${toggleClassCheck}`}
                     onClick={handleGenre} 
-                    href='/genres' 
                     data-attribute="fiction">
                         Fiction
-                </a>
-                <a 
+                </button>
+                <button 
+                    className={`${toggleClassCheck}`}
                     onClick={handleGenre} 
-                    href='/genres' 
                     data-attribute="non-fiction">
                         Non-Fiction 
-                </a>
-                <a 
+                </button>
+                <button
+                    className={`${toggleClassCheck}`}
                     onClick= {handleGenre} 
-                    href='/genres' 
                     data-attribute="manga">
                         Manga
-                </a>
-                <a 
+                </button>
+                <button 
+                    className={`${toggleClassCheck}`}
                     onClick= {handleGenre} 
-                    href='/genres' 
                     data-attribute="science">
                         Science
-                </a>
-                <a 
+                </button>
+                <button 
+                    className={`${toggleClassCheck}`}
                     onClick= {handleGenre} 
-                    href='/genres' 
                     data-attribute="sports">
                         Sports
-                </a>
-                <a 
+                </button>
+                <button 
+                    className={`${toggleClassCheck}`}
                     onClick= {handleGenre} 
-                    href='/genres' 
                     data-attribute="young-adults">
                         Young Adults
-                </a>
-                <a 
+                </button>
+                <button
+                    className={`${toggleClassCheck}`}
                     onClick= {handleGenre} 
-                    href='/genres' 
                     data-attribute="travel">
                         Travel
-                </a>
-                <a  
+                </button>
+                <button 
+                    className={`${toggleClassCheck}`}
                     onClick= {handleGenre} 
-                    href='/genres' 
                     data-attribute="education">
                         Education
-                </a>
-                <a 
+                </button>
+                <button 
+                    className={`${toggleClassCheck}`}
                     onClick= {handleGenre} 
-                    href='/genres' 
                     data-attribute="paperback-advice">
                         Advice
-                </a>
-                <a 
+                </button>
+                <button 
+                    className={`${toggleClassCheck}`}
                     onClick= {handleGenre} 
-                    href='/genres' 
                     data-attribute="food-and-fitness">
                         Food and Fitness
-                </a>
-                <a 
+                </button>
+                <button 
+                    className={`${toggleClassCheck}`}
                     onClick= {handleGenre} 
-                    href='/genres' 
                     data-attribute="humor">
                         Humor
-                </a>
+                </button>
             </div>
         </>
     )

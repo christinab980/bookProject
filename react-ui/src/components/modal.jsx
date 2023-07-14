@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import GenreButtons from "./genreButtons"
 
-const Modal = (action) => {
+const Modal = () => {
+
+    const [showAccountPage, setShowAccountPage] = useState(false);
+
+    function handleGenreRecommendation() {
+        setShowAccountPage(true)
+
+    }
+
     return (
         <>
-            <div className='modal'>
+            <div className='modal-container'>
+                <h4 className='modal-heading'>Pick your 3 favorite genres and hopefully we'll recommend your next favorite book!</h4>
                 <GenreButtons />
+                <div  className='modal-button'>
+                    <button onClick={handleGenreRecommendation}> Submit</button>
+                </div>
             </div>
         </>
     )
