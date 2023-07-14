@@ -37,6 +37,15 @@ server.get('/', (req, res) => {
     res.json({message: 'heartbeat'})
 })
 
+server.post('/api/setFavorites', async (req, res) => {
+    const { username, genres, books } = req.body;
+    let userIdSearch = await db.query(`SELECT personid FROM users WHERE username='${username}'`);
+    let userId = userIdSearch[0].personid;
+    db.query(`INSERT INTO favorites (personid, username, favoritegenres, favoritebooks) VALUES ('${userId}', '${username}', '${genres}', '${books}')`);
+    res.json({'message': 'favorites set'})
+
+})
+
 server.post('/api/signup', async (req, res) => {
     const {name, username, email, password, birthday} = req.body;
     /* The line `let search = await db.query(SELECT * FROM (users) WHERE (newUsername === username));`
@@ -62,7 +71,7 @@ server.post('/api/signup', async (req, res) => {
         res.json({
             username: username,
             isAuthenticated: true,
-            redirectTo: '/acccount'
+            redirectTo: '/account'
         })
 
     }
@@ -83,7 +92,7 @@ server.post('/api/signin', async (req, res) => {
             res.json({
                 username: username,
                 isAuthenticated: true,
-                redirectTo: '/acccount'
+                redirectTo: '/account'
             })
         }
     } else {
@@ -91,7 +100,7 @@ server.post('/api/signin', async (req, res) => {
     }
 })
 
-server.get('/api/favoriteGenres', async (req, res) => {
+server.post('/api/favoriteGenres', async (req, res) => {
     let { username } = req.body;
     let userId = await db.query(`SELECT personid FROM users WHERE username='${username}'`)
     let favoriteGenres = await db.query(`SELECT favoritegenres FROM favorites WHERE personid='${userId}'`);
@@ -99,7 +108,13 @@ server.get('/api/favoriteGenres', async (req, res) => {
 })
 
 server.get('/account', async (req, res) => {
-    let favorites = db.query(`SELECT * from favorites WHERE personid =`)
+    let { username } = req.body;
+    let userId = await db.query(`SELECT personid FROM users where username='${username}`);
+    let favorites = await db.query(`SELECT favoritegenres from favorites WHERE personid='${userId}'`);
+    if (favorites && favorites[0].length > 0) {
+        res.json(favorites);
+    }
+
 })
 
 server.get('*', (req, res) => {

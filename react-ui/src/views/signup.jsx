@@ -2,10 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import { addUsernameToStore } from '../features/usernameSlice';
 import { useDispatch } from 'react-redux';
-import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
-    let location = useLocation();
+    let location = useNavigate();
     const { pathname } = location;
     const [name, setName] = useState();
     const [username, setUser] = useState();
@@ -57,7 +57,7 @@ const SignUp = () => {
         .then((response) => {
             console.log(response)
             dispatch(addUsernameToStore(response.username));
-            pathname.replace(response.redirectTo);
+            location(response.redirectTo);
         })
         clearUseState();
     }

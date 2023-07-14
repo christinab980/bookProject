@@ -1,11 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
-import { username } from '../features/usernameSlice';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { addUsernameToStore } from '../features/usernameSlice';
 
 const SignIn = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
@@ -37,7 +38,7 @@ const SignIn = () => {
         .then((response) => {
             console.log(response);
             dispatch(addUsernameToStore(response.username));
-            location.href(response.redirectTo)
+            navigate(response.redirectTo);
         })
         setUsername('');
         setEmail('');
