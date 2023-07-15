@@ -14,6 +14,7 @@ main {
   display: flex;
   flex: 1;
 }
+
 .root {
   display: flex;
   flex-direction: column;
@@ -36,28 +37,35 @@ footer img {
 header {
   padding: 10px 0;
 }
+
 .logo {
   height: 90px;
 }
+
 /* navigation stylings  */
 .y-wrap {
   margin: 0 auto;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 .y-navs {
   display: flex;
   align-items: center;
   width: 90%;
 }
+
 .y-navs a:first-of-type {
   flex: 1;
 }
+
 .y-navs a:not(:first-of-type) {
   margin: 0 0 0 16px;
 }
+
 /* landing stylings  */
 .landing-container, .discover-container{
   display: flex;
@@ -71,13 +79,17 @@ a {
   color: #215466;
 }
 
-.genre-buttons, .genre-landing-component {
+.genre-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 15px;
   margin: 5% 30px;
+}
+
+.genre-landing-component-a {
+  color: red;
 }
 
 .genre-buttons a {
