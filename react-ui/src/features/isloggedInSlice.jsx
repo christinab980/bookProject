@@ -7,11 +7,13 @@ const doLogin = async(username, password) => {
             'Content-Type': 'application/json'
         },
         method: 'POST'
-    };
+    }
+;
 
 const response = await fetch ('/api/signin', options);
-const data = await response.json();
-return await data;
+const data = await response.json()
+return await data
+
 };
 
 export const verifyAuth = createAsyncThunk('/api/signin', async ({username, password}) => {
