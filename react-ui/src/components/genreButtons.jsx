@@ -42,7 +42,6 @@ const Genre = () => {
         <>
             <div className="genre-buttons">
                 <button 
-
                     onClick={handleGenre} 
                     data-attribute="family" 
                     href='genres'>
@@ -50,72 +49,57 @@ const Genre = () => {
                 </button>
                 <button 
                     onClick={handleGenre}
-
                     data-attribute="fiction">
                         Fiction
                 </button>
                 <button 
-
                     onClick={handleGenre} 
                     data-attribute="non-fiction">
                         Non-Fiction 
                 </button>
                 <button 
                     onClick= {handleGenre} 
-                     
-
                     data-attribute="manga">
                         Manga
                 </button>
                 <button 
                     onClick= {handleGenre} 
-
                     data-attribute="science">
                         Science
                 </button>
                 <button 
                     onClick= {handleGenre} 
-                     
                     data-attribute="sports">
                         Sports
                 </button>
                 <button 
-
                     onClick= {handleGenre} 
-                     
                     data-attribute="young-adults">
                         Young Adults
                 </button>
                 <button 
                     onClick= {handleGenre} 
-                     
                     data-attribute="travel">
                         Travel
                 </button>
                 <button  
                     onClick= {handleGenre} 
-                     
                     data-attribute="education">
                         Education
                 </button>
                 <button 
-
                     onClick= {handleGenre} 
-                     
                     data-attribute="paperback-advice">
                         Advice
                 </button>
                 <button 
-
                     onClick= {handleGenre} 
                     
                     data-attribute="food-and-fitness">
                         Food and Fitness
                 </button>
                 <button 
-
                     onClick= {handleGenre} 
-                     
                     data-attribute="humor">
                         Humor
                 </button>
@@ -124,7 +108,6 @@ const Genre = () => {
                     data-attribute='submit'>
                         submit
                 </button>
-
             </div>
         </>
     )
