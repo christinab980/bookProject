@@ -3,7 +3,9 @@ import axios from "axios";
 import { setFavorite, favorites } from "../features/favoritesSlice";
 import { username } from "../features/usernameSlice";
 import { useDispatch, useSelector } from "react-redux";
+
 import Modal from '../components/modal.jsx';
+
 
 const Account = () => {    
     const dispatch = useDispatch();
@@ -32,6 +34,7 @@ const Account = () => {
                     dispatch(setFavorite(favoriteSplit));
 
                 }
+
                 })
         }
     }, [])
@@ -45,6 +48,7 @@ const Account = () => {
             )}
         </>
         
+
     )
 }
 

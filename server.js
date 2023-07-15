@@ -37,6 +37,7 @@ server.get('/', (req, res) => {
     res.json({message: 'heartbeat'})
 })
 
+
 server.post('/api/setFavoriteGenres', async (req, res) => {
     const { _username, genres } = req.body;
     let userIdSearch = await db.query(`SELECT personid FROM users WHERE username='${_username}'`);

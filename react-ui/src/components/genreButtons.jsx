@@ -10,7 +10,9 @@ const Genre = () => {
     let books = 'books';
     let _username = useSelector(username);
 
-    let dispatch = useDispatch()
+
+    let dispatch = useDispatch();
+
 
     function handleSubmit() {
         // commenting out line 14 as there are ways to utilize the favorites slice for genre recomms, we can reinstate it later when we find a need
@@ -32,13 +34,15 @@ const Genre = () => {
     function handleGenre (e) {
         let category = e.target.getAttribute("data-attribute")
         setGenres(`${genres} ${category}`);
+
     }
     
+
     return (
         <>
-            <h2 className='y-wrap genre-buttons-heading'>Popular Genres</h2>
             <div className="genre-buttons">
                 <button 
+
                     onClick={handleGenre} 
                     data-attribute="family" 
                     href='genres'>
@@ -46,10 +50,12 @@ const Genre = () => {
                 </button>
                 <button 
                     onClick={handleGenre}
+
                     data-attribute="fiction">
                         Fiction
                 </button>
                 <button 
+
                     onClick={handleGenre} 
                     data-attribute="non-fiction">
                         Non-Fiction 
@@ -57,12 +63,13 @@ const Genre = () => {
                 <button 
                     onClick= {handleGenre} 
                      
+
                     data-attribute="manga">
                         Manga
                 </button>
                 <button 
                     onClick= {handleGenre} 
-                     
+
                     data-attribute="science">
                         Science
                 </button>
@@ -73,6 +80,7 @@ const Genre = () => {
                         Sports
                 </button>
                 <button 
+
                     onClick= {handleGenre} 
                      
                     data-attribute="young-adults">
@@ -91,18 +99,21 @@ const Genre = () => {
                         Education
                 </button>
                 <button 
+
                     onClick= {handleGenre} 
                      
                     data-attribute="paperback-advice">
                         Advice
                 </button>
                 <button 
+
                     onClick= {handleGenre} 
-                     
+                    
                     data-attribute="food-and-fitness">
                         Food and Fitness
                 </button>
                 <button 
+
                     onClick= {handleGenre} 
                      
                     data-attribute="humor">
@@ -113,6 +124,7 @@ const Genre = () => {
                     data-attribute='submit'>
                         submit
                 </button>
+
             </div>
         </>
     )
