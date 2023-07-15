@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { setFavorite } from "../features/favoritesSlice";
+import { setFavorite, favorites } from "../features/favoritesSlice";
 import { username } from "../features/usernameSlice";
 import { useDispatch, useSelector } from "react-redux";
-import Modal from "../components/modal"
+
+import Modal from '../components/modal.jsx';
+
 
 const Account = () => {    
     const dispatch = useDispatch();
     const _username = useSelector(username);
+    const _favorites = useSelector(favorites);
     const currentUrl = location.href;
     const url = currentUrl.match(/([^\/]+$)/g)[0];
-    
     useEffect(() => {
         if (url === 'account') {
             console.log('hi', _username)
@@ -23,18 +25,29 @@ const Account = () => {
                 })
                 .then((response) => response.json())
                 .then((response) => {
-                    if (response && response.favorites) {
-                    let favorites = response.genres.split(',');
-                    dispatch(setFavorite(favorites));
-                    } else {
-                        console.log(response.message)
-                    }
+                    console.log(response);
+                    if (response) {
+                    let favorites = response[0].favoritegenres;
+                    let favoriteSplit = favorites.split(' ');
+                    console.log(response);
+                    dispatch(setFavorite(favoriteSplit));
+
+                }
+
                 })
         }
     }, [])
     return (
+        <>
+            <h1>account</h1>
+            {_favorites.length > 0 ? (
+                <div>account page</div>
+            ):(
+                <Modal />
+            )}
+        </>
         
-        <Modal />
+
     )
 }
 

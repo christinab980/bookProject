@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import { selectBookData } from "../features/dataSlice"
-import { useSelector } from "react-redux"
+import { useSelector } from "react-redux";
+import { genres } from "../features/genreTable";
 import Button from "./button"
 
 
 const Book = () => {
+    const _genres = useSelector(genres);
     const currentUrl = location.href;
     const endpoint = currentUrl.match(/([^\/]+$)/g);
     const url = endpoint ? endpoint[0] : '/';
