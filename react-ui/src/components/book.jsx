@@ -23,12 +23,6 @@ const Book = () => {
         } 
     }, [])
 
-    // useEffect(() => {
-    //     if (url === 'discover') {
-    //         setNumberOfBooks(15)
-    //     }
-    // }, [])
-
     return (
         <> 
         {data && data.results && data.results.books && data.results.books.slice(0, numberOfBooks).map((result, index)  =>
