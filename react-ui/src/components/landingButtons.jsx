@@ -1,5 +1,4 @@
 import React from 'react';
-import "../../index.css"
 
 const LandingPopularGenres = () => {
 
@@ -7,6 +6,7 @@ const LandingPopularGenres = () => {
         <>
             <div className="genre-landing-component">
                 <a
+                    className='genre-landing-component-a'
                     data-attribute="family" 
                     href='https://book-project-kdip.vercel.app/genres'>
                         Family

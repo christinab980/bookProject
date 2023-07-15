@@ -79,7 +79,7 @@ a {
   color: #215466;
 }
 
-.genre-buttons {
+.genre-buttons, .genre-landing-component {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -89,6 +89,10 @@ a {
 }
 
 .genre-landing-component-a {
+  background-color: red;
+}
+
+.genre-landing-component a {
   color: red;
 }
 
