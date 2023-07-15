@@ -13,6 +13,7 @@ const Account = () => {
     const _favorites = useSelector(favorites);
     const currentUrl = location.href;
     const url = currentUrl.match(/([^\/]+$)/g)[0];
+    
     useEffect(() => {
         if (url === 'account') {
             console.log('hi', _username)
