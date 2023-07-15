@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { selectBookData } from "../features/dataSlice"
-import { useSelector } from "react-redux";
 import { genres } from "../features/genreTable";
 import Button from "./button"
 
