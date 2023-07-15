@@ -1,31 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { selectBookData } from "../features/dataSlice"
-import { useSelector } from "react-redux"
 import Button from "./button"
+import  { advice, education, family, fiction, nonFiction, foodAndFitness, humor, manga, science, sports, travel, youngAdult } from "../mock/index"
 
 
-const Book = () => {
-    const currentUrl = location.href;
-    const endpoint = currentUrl.match(/([^\/]+$)/g);
-    const url = endpoint ? endpoint[0] : '/';
-    console.log(url);
-  
-    const [numberOfBooks, setNumberOfBooks] = useState(5);
+const GenreBook = () => {
 
-    let data = useSelector(selectBookData);
-    console.log(data)
-
-    useEffect(() => {
-        if (currentUrl.includes('discover')) {
-            setNumberOfBooks(15)
-        } if (currentUrl.includes('genres')) {
-            setNumberOfBooks(15)
-        } 
-    }, [])
+    const category = {advice, education, family, fiction, nonFiction, foodAndFitness, humor, manga, science, sports, travel, youngAdult }
 
     return (
         <> 
-        {data && data.results && data.results.books && data.results.books.slice(0, numberOfBooks).map((result, index)  =>
+        {{category}.results.books.map((result, index)  =>
             (<div className="book-container" key={result.rank}>
                     <div className="book-img">
                         <img src={result.book_image} alt="book-cover" />
@@ -45,4 +29,4 @@ const Book = () => {
     )
 }
 
-export default Book;
+export default GenreBook;

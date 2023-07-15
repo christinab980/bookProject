@@ -10,6 +10,7 @@ const Account = () => {
     const _username = useSelector(username);
     const currentUrl = location.href;
     const url = currentUrl.match(/([^\/]+$)/g)[0];
+    
     useEffect(() => {
         if (url === 'account') {
             console.log('hi', _username)
