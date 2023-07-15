@@ -17,7 +17,7 @@ const Account = () => {
     useEffect(() => {
         if (url === 'account') {
             console.log('hi', _username)
-                fetch(`/api/account`, {
+                fetch(`https://book-project-ecru.vercel.app/api/account`, {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json'

@@ -18,7 +18,7 @@ const Genre = () => {
         // commenting out line 14 as there are ways to utilize the favorites slice for genre recomms, we can reinstate it later when we find a need
         // dispatch(setGenreRecommendations(category))
         dispatch(setGenreRecommendations(genres));
-        fetch('/api/setFavoriteGenres', {
+        fetch('https://book-project-ecru.vercel.app/api/setFavoriteGenres', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

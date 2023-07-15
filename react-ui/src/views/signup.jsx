@@ -44,7 +44,7 @@ const SignUp = () => {
     const handleSubmit = e => {
         e.preventDefault();
 
-        fetch('/api/signup', {
+        fetch('https://book-project-ecru.vercel.app/api/signup', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
