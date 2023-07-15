@@ -17,14 +17,14 @@ allows the server to serve the frontend of the application when the correspondin
 server.use(express.static(path.resolve(__dirname +  '/react-ui/dist')));
 
 
-const cn = {
-    host: 'localhost',
-    port: 5432,
-    database: 'bookproject',
-    user: 'postgres',
-    password: 'grady',
-    allowedExitOnIdle: true,
-}
+// const cn = {
+//     host: 'localhost',
+//     port: 5432,
+//     database: 'bookproject',
+//     user: 'postgres',
+//     password: 'grady',
+//     allowedExitOnIdle: true,
+// }
 
 const db = pgp(cn);
 

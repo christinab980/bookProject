@@ -5,4 +5,3 @@ CREATE TABLE favorites (personid INT, username VARCHAR(250), favoritegenres VARC
 CREATE TABLE books (bookid INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, title VARCHAR(250));
 CREATE TABLE reviews (reviewid INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, username VARCHAR(250), booktitle VARCHAR(250), bookid INT, bookreview JSON, FOREIGN KEY (bookid) REFERENCES books(bookid));
 
- 
