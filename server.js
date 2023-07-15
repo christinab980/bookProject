@@ -26,7 +26,7 @@ server.use(express.static(path.resolve(__dirname +  '/react-ui/dist')));
 //     allowedExitOnIdle: true,
 // }
 
-const db = pgp(cn);
+const db = pgp(process.env.ESQL);
 
 
 server.get('/heartbeat', (req, res) => {
