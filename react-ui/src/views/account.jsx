@@ -20,7 +20,8 @@ const Account = () => {
                 fetch(`https://book-project-ecru.vercel.app/api/account`, {
                     method: "POST",
                     headers: {
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'application/json',
+                        "Access-Control-Allow-Headers": "*",
                     },
                     body: JSON.stringify({_username})
                 })

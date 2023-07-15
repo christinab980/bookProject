@@ -72,7 +72,7 @@ const SignIn = () => {
                     />
                         <a className="form-a" href="/sign-up">Create an Account </a>
                     <div className='form-button'>
-                        <button type='submit' id='submitBtn' onClick={handleSubmit}> Submit</button> 
+                        <button type='submit' id='submitBtn' className="submit-button" onClick={handleSubmit}> Submit</button> 
                     </div>
                 </form>
             </div>

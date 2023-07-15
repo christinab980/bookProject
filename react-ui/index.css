@@ -277,6 +277,11 @@ input {
   padding: 10px;
 }
 
+.submit-button {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 /* Sign-In Form */
 
 .form-container {
