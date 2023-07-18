@@ -7,7 +7,6 @@ import { username } from '../features/usernameSlice';
 
 const Genre = () => {
     let [genres, setGenres] = useState('');
-    const [btnClicked, setBtnClicked] = useState(false);
     const [isActive, setIsActive] = useState([]);
 
     let books = 'books';
@@ -35,23 +34,23 @@ const Genre = () => {
     }
 
     function handleGenre (clickedGenre) {
-
+            let genreArray = genres.split(" ");
+        
             let indexFound = isActive.indexOf(clickedGenre)
 
             if(indexFound === -1 && isActive.length < 3) {
                 setIsActive([...isActive, clickedGenre])
+                genreArray.push(clickedGenre)
+                let newGenres = genreArray.join(" ")
+                setGenres(newGenres)
             } else {
+                //filterActive will work for isActive and Genres array 
                 let filterActive = isActive.filter( genre => genre !== clickedGenre )
                 setIsActive(filterActive)
+                let newGenres = filterActive.join(" ")
+                setGenres(newGenres)
             }
-        
-
-            let category = clickedGenre
-            setGenres(`${genres} ${category}`);
-        
     }
-    
-    console.log(isActive)
 
     return (
         <>
@@ -128,6 +127,13 @@ const Genre = () => {
                     className={isActive.includes("humor") ? "active" : " "}
                     data-attribute="humor">
                         Humor
+                </button>
+            </div>
+            <div className='modal-button'>
+                <button 
+                    onClick={handleSubmit}
+                    >
+                    Submit
                 </button>
             </div>
         </>
