@@ -16,8 +16,10 @@ const Landing = () => {
         <div className='landing-container'>
             <Book /> 
         </div>
-            <h2 className='y-wrap genre-buttons-heading'>Popular Genres</h2>
-            <LandingPopularGenres />
+            <div className='genre-container'>
+                <h2 className='y-wrap genre-buttons-heading'>Popular Genres</h2>
+                <LandingPopularGenres />
+            </div>
         </>
     )
 };
