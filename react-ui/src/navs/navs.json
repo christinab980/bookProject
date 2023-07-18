@@ -2,21 +2,25 @@
     {
         "href": "/discover",
         "id": 102,
+        "isPrivate": false,
         "name": "Discover"
     },
     {
         "href": "/genres",
         "id": 103,
+        "isPrivate": false,
         "name": "Genres"
     },
     {
         "href": "/sign-in",
         "id": 104,
+        "isPrivate": false,
         "name": "Sign-In"
     }, 
     {
         "href": "/sign-up",
         "id": 105,
+        "isPrivate": false,
         "name": "Sign-Up"
     },
     {
