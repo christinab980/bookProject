@@ -3,9 +3,11 @@ import data from "../navs/navs.json"
 import { NavLink } from 'react-router-dom';
 import logo from "../navs/logo.json"
 import "/index.css"
+import { useSelector } from 'react-redux';
+import { selectIsLoggedIn } from '../features/isloggedInSlice';
 
 const Header = () => {
-    const isLoggedIn = false 
+    const isLoggedIn = useSelector(selectIsLoggedIn) 
 
     const navs = data
         .filter(nav => nav.isPrivate === isLoggedIn)
