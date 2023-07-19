@@ -84,7 +84,7 @@ a {
   color: #215466;
 }
 
-.genre-buttons {
+.genre-buttons, .genre-landing-component{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -103,9 +103,23 @@ a {
   font-size: 1rem;
 }
 
+.genre-landing-component a {
+  padding: 20px;
+  background-color: #fff;
+  color: #215466;
+  border: 2px solid #215466;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
 .genre-buttons-heading {
   margin-top: 5%;
   color: #215466;
+}
+
+.genre-container {
+  text-align: center;
 }
 
 .hero-image-landing {
@@ -267,6 +281,11 @@ input {
   padding: 10px;
 }
 
+.submit-button {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 /* Sign-In Form */
 
 .form-container {
@@ -397,7 +416,7 @@ form a {
   margin: 2%;
 }
 
-.modal-button button{
+.modal-button button {
   padding: 15px;
   background-color:#215466;
   color: #fff;
@@ -406,7 +425,41 @@ form a {
   cursor: pointer;
   font-size: 1rem;
 }
+
 .genre-buttons button.active{
   background-color: #215466;
   color: #fff;
+}
+
+@media (max-width: 650px) {
+
+  main {
+    width: 650px;
+  }
+
+  .hero-text {
+    width: 400px;
+  }
+
+  .landing-container {
+    height: 460px;
+    margin: 0 25px;
+    width: 90vw;
+    gap: 25px;
+  }
+
+  .book-container {
+    width: 30vw;
+    display: flex;
+  }
+
+  .genre-container {
+    margin: 0 5%;
+    margin-bottom: 10px;
+  }
+  
+  .modal-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

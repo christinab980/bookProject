@@ -7,6 +7,8 @@ import { username } from '../features/usernameSlice';
 
 const Genre = () => {
     let [genres, setGenres] = useState('');
+    const [isActive, setIsActive] = useState([]);
+
     let books = 'books';
     let _username = useSelector(username);
 
@@ -31,100 +33,108 @@ const Genre = () => {
         })
     }
 
-    function handleGenre (e) {
-        let category = e.target.getAttribute("data-attribute")
-        setGenres(`${genres} ${category}`);
+    function handleGenre (clickedGenre) {
+            let genreArray = genres.split(" ");
+        
+            let indexFound = isActive.indexOf(clickedGenre)
 
+            if(indexFound === -1 && isActive.length < 3) {
+                setIsActive([...isActive, clickedGenre])
+                genreArray.push(clickedGenre)
+                let newGenres = genreArray.join(" ")
+                setGenres(newGenres)
+            } else {
+                //filterActive will work for isActive and Genres array 
+                let filterActive = isActive.filter( genre => genre !== clickedGenre )
+                setIsActive(filterActive)
+                let newGenres = filterActive.join(" ")
+                setGenres(newGenres)
+            }
     }
-    
 
     return (
         <>
             <div className="genre-buttons">
                 <button 
-
-                    onClick={handleGenre} 
+                    onClick={() => handleGenre("family")} 
+                    className={isActive.includes("family") ? "active" : " "}
                     data-attribute="family" 
                     href='genres'>
                         Family
                 </button>
                 <button 
-                    onClick={handleGenre}
-
+                    onClick={() => handleGenre("fiction")} 
+                    className={isActive.includes("fiction") ? "active" : " "}
                     data-attribute="fiction">
                         Fiction
                 </button>
                 <button 
-
-                    onClick={handleGenre} 
+                    onClick={() => handleGenre("non-fiction")} 
+                    className={isActive.includes("non-fiction") ? "active" : " "}
                     data-attribute="non-fiction">
                         Non-Fiction 
                 </button>
                 <button 
-                    onClick= {handleGenre} 
-                     
-
+                    onClick={() => handleGenre("manga")} 
+                    className={isActive.includes("manga") ? "active" : " "}
                     data-attribute="manga">
                         Manga
                 </button>
                 <button 
-                    onClick= {handleGenre} 
-
+                    onClick={() => handleGenre("science")} 
+                    className={isActive.includes("science") ? "active" : " "}
                     data-attribute="science">
                         Science
                 </button>
                 <button 
-                    onClick= {handleGenre} 
-                     
+                    onClick={() => handleGenre("sports")} 
+                    className={isActive.includes("sports") ? "active" : " "}
                     data-attribute="sports">
                         Sports
                 </button>
                 <button 
-
-                    onClick= {handleGenre} 
-                     
+                    onClick={() => handleGenre("young-adults")} 
+                    className={isActive.includes("young-adults") ? "active" : " "}
                     data-attribute="young-adults">
                         Young Adults
                 </button>
                 <button 
-                    onClick= {handleGenre} 
-                     
+                    onClick={() => handleGenre("travel")} 
+                    className={isActive.includes("travel") ? "active" : " "}
                     data-attribute="travel">
                         Travel
                 </button>
                 <button  
-                    onClick= {handleGenre} 
-                     
+                    onClick={() => handleGenre("education")} 
+                    className={isActive.includes("education") ? "active" : " "}
                     data-attribute="education">
                         Education
                 </button>
                 <button 
-
-                    onClick= {handleGenre} 
-                     
+                    onClick={() => handleGenre("paperback-advice")} 
+                    className={isActive.includes("paperback-advice") ? "active" : " "}
                     data-attribute="paperback-advice">
                         Advice
                 </button>
                 <button 
-
-                    onClick= {handleGenre} 
-                    
+                    onClick={() => handleGenre("food-and-fitness")} 
+                    className={isActive.includes("food-and-fitness") ? "active" : " "}
                     data-attribute="food-and-fitness">
                         Food and Fitness
                 </button>
                 <button 
-
-                    onClick= {handleGenre} 
-                     
+                    onClick={() => handleGenre("humor")} 
+                    className={isActive.includes("humor") ? "active" : " "}
                     data-attribute="humor">
                         Humor
                 </button>
-                <button
+            </div>
+            <div className='modal-button'>
+                <button 
                     onClick={handleSubmit}
-                    data-attribute='submit'>
-                        submit
+                    >
+                    Submit
                 </button>
-
             </div>
         </>
     )

@@ -1,6 +1,7 @@
 import React from 'react';
 import Book from "../components/book";
-import GenreButtons from "../components/genreButtons"
+import LandingPopularGenres from '../components/landingButtons';
+
 const Landing = () => {
 
     return (
@@ -15,8 +16,10 @@ const Landing = () => {
         <div className='landing-container'>
             <Book /> 
         </div>
-            <h2 className='y-wrap genre-buttons-heading'>Popular Genres</h2>
-            <GenreButtons />
+            <div className='genre-container'>
+                <h2 className='y-wrap genre-buttons-heading'>Popular Genres</h2>
+                <LandingPopularGenres />
+            </div>
         </>
     )
 };

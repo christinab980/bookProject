@@ -22,6 +22,7 @@
     {
         "href": "/account",
         "id": 106,
+        "isPrivate": true,
         "name": "Account"
     }
 ]

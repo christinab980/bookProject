@@ -16,6 +16,8 @@ serving the static files from the `react-ui` directory, specifically the `index.
 allows the server to serve the frontend of the application when the corresponding route is accessed. */
 server.use(express.static(path.resolve(__dirname +  '/react-ui/dist')));
 
+server.options("*", cors());
+server.use(cors())
 
 // const cn = {
 //     host: 'localhost',

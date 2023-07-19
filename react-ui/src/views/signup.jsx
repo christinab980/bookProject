@@ -47,7 +47,8 @@ const SignUp = () => {
         fetch('https://book-project-ecru.vercel.app/api/signup', {
             method: "POST",
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                "Access-Control-Allow-Headers": "*",
             },
             // TODO fix the JSON formatting for the body after full link up
             body: JSON.stringify({name, username, email, password, birthday})
