@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { addUsernameToStore } from '../features/usernameSlice';
+import { selectIsLoggedIn, verifyAuth } from '../features/isloggedInSlice';
 
 const SignIn = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const isLoggedIn = useSelector(selectIsLoggedIn);
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
+
+    useEffect(() => {
+        if (isLoggedIn) {
+            navigate('/account');
+        }
+    }, [isLoggedIn]);
 
     const handleUsername = e => {
         setUsername(e.target.value)
@@ -25,22 +33,10 @@ const SignIn = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
+        // dispatch(addUsernameToStore(response.username));
+        dispatch(verifyAuth({username, email, password}));
+        //navigate(response.redirectTo);
 
-        // fetch('https://book-project-ecru.vercel.app/api/signin', {
-            fetch('http://localhost:8080/api/signin', {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            // TODO fix the JSON formatting for the body after full link up
-            body: JSON.stringify({username, email, password})
-        })
-        .then((response) => response.json())
-        .then((response) => {
-            console.log(response);
-            dispatch(addUsernameToStore(response.username));
-            navigate(response.redirectTo);
-        })
         setUsername('');
         setEmail('');
         setPassword('');

@@ -18,8 +18,19 @@ serving the static files from the `react-ui` directory, specifically the `index.
 allows the server to serve the frontend of the application when the corresponding route is accessed. */
 server.use(express.static(path.resolve(__dirname +  '/react-ui/dist')));
 
-server.options("*", cors());
-server.use(cors())
+// server.options("*", cors());
+// server.use(cors())
+
+server.use(function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', 'http://localhost:5173');
+    res.header('Access-Control-Allow-Headers', 'Content-Type,Authorization');
+    res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE');
+    if (req.method === 'OPTIONS') {
+      return res.send(204);
+    }
+    next();
+  });
+
 server.use(session({
     cookie: {
         secure: false,
@@ -95,6 +106,7 @@ server.get('/api/verifyAuth', (req, res) => {
 }),
 
 server.post('/api/signin', async (req, res) => {
+    console.log('/api/signin')
     const {username, email, password} = req.body;
     // let results = [];
     let search = await db.query(`SELECT * FROM users WHERE username='${username}'`);
@@ -120,12 +132,13 @@ server.post('/api/signin', async (req, res) => {
 
 
 server.post('/api/account', async (req, res) => {
+    console.log('/api/account')
     let { _username } = req.body;
     console.log(_username);
     let userIdQuery = await db.query(`SELECT personid FROM users where username='${_username}'`);
     console.log(userIdQuery);
     console.log(userIdQuery[0]);
-    let userId = userIdQuery[0].personid;
+    let userId = userIdQuery && userIdQuery[0].personid;
     let favorites = await db.query(`SELECT favoritegenres from favorites WHERE personid='${userId}'`);
     if (favorites && favorites.length > 0) {
         res.json(favorites);
