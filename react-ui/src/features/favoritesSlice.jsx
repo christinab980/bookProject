@@ -12,7 +12,6 @@ export const favesSlice = createSlice({
     initialState: [],
     reducers: {
         setFavorite(state, action) {
-            console.log("hello", action.payload)
             const value = action.payload
             return [...state, value]
         }

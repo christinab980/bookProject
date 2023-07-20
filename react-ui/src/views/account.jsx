@@ -3,6 +3,8 @@ import axios from "axios";
 import { setFavorite, favorites } from "../features/favoritesSlice";
 import { username } from "../features/usernameSlice";
 import { useDispatch, useSelector } from "react-redux";
+import GenreBook from "../components/genreBook";
+
 
 import Modal from '../components/modal.jsx';
 
@@ -14,6 +16,7 @@ const Account = () => {
     const currentUrl = location.href;
     const url = currentUrl.match(/([^\/]+$)/g)[0];
     
+
     useEffect(() => {
         if (url === 'account') {
             console.log('hi', _username)
@@ -31,7 +34,6 @@ const Account = () => {
                     if (response) {
                     let favorites = response[0].favoritegenres;
                     let favoriteSplit = favorites.split(' ');
-                    console.log(response);
                     dispatch(setFavorite(favoriteSplit));
 
                 }
@@ -42,7 +44,27 @@ const Account = () => {
     return (
         <>
             {_favorites.length > 0 ? (
-                <div>account page</div>
+                <div className="account-container">
+                    <div className='hero-image-account'>
+                        <div className='hero-text'>
+                            <h2>Account</h2>
+                            <p>Browse YOUR favorite books!</p>
+                        </div>
+                    </div>
+                    <div className="welcome-heading"> Hi {_username} </div>
+                    <div>
+                        <h2 className="account-headings">Recommended Books</h2>
+                        <div className="recommended-books">
+                            <GenreBook />
+                        </div>
+                    </div> 
+                    <div>
+                        <h2 className="account-headings">Favorite Books</h2>
+                    </div> 
+                    <div>
+                        <h2 className="account-headings">Books I've Read</h2>
+                    </div> 
+                </div>
             ):
             (
                 <Modal />

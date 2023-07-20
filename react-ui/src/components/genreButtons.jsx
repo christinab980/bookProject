@@ -69,9 +69,9 @@ const Genre = () => {
                         Fiction
                 </button>
                 <button 
-                    onClick={() => handleGenre("non-fiction")} 
-                    className={isActive.includes("non-fiction") ? "active" : " "}
-                    data-attribute="non-fiction">
+                    onClick={() => handleGenre("nonFiction")} 
+                    className={isActive.includes("nonFiction") ? "active" : " "}
+                    data-attribute="nonFiction">
                         Non-Fiction 
                 </button>
                 <button 
@@ -111,15 +111,15 @@ const Genre = () => {
                         Education
                 </button>
                 <button 
-                    onClick={() => handleGenre("paperback-advice")} 
-                    className={isActive.includes("paperback-advice") ? "active" : " "}
-                    data-attribute="paperback-advice">
+                    onClick={() => handleGenre("advice")} 
+                    className={isActive.includes("advice") ? "active" : " "}
+                    data-attribute="advice">
                         Advice
                 </button>
                 <button 
-                    onClick={() => handleGenre("food-and-fitness")} 
-                    className={isActive.includes("food-and-fitness") ? "active" : " "}
-                    data-attribute="food-and-fitness">
+                    onClick={() => handleGenre("foodAndFitness")} 
+                    className={isActive.includes("foodAndFitness") ? "active" : " "}
+                    data-attribute="foodAndFitness">
                         Food and Fitness
                 </button>
                 <button 
