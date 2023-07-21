@@ -8,7 +8,7 @@ import { selectIsLoggedIn } from '../features/isloggedInSlice';
 
 const Header = () => {
     const isLoggedIn = useSelector(selectIsLoggedIn) 
-
+    console.log("hello")
     const navs = data
         // .filter(nav => nav.isPrivate === isLoggedIn)
         .map( nav => {
