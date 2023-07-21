@@ -4,6 +4,7 @@ import { setFavorite, favorites } from "../features/favoritesSlice";
 import { username } from "../features/usernameSlice";
 import { useDispatch, useSelector } from "react-redux";
 import GenreBook from "../components/genreBook";
+import { setGenreRecommendations, genres } from "../features/genreTable";
 
 
 import Modal from '../components/modal.jsx';
@@ -13,6 +14,7 @@ const Account = () => {
     const dispatch = useDispatch();
     const _username = useSelector(username);
     const _favorites = useSelector(favorites);
+    const _genre = useSelector(genres)
     const currentUrl = location.href;
     const url = currentUrl.match(/([^\/]+$)/g)[0];
     

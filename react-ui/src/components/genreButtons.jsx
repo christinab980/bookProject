@@ -21,7 +21,7 @@ const Genre = () => {
         // dispatch(setGenreRecommendations(category))
         dispatch(setGenreRecommendations(genres));
         // fetch('https://book-project-ecru.vercel.app/api/setFavoriteGenres', {
-        fetch('http://localhost:8080/api/setFavorites', {
+        fetch('http://localhost:8080/api/setFavoriteGenres', {
             headers: {
                 "Content-Type": "application/json"
             },
