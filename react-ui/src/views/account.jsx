@@ -35,7 +35,6 @@ const Account = () => {
                     let favorites = response.favoritegenres;
                     let favoriteSplit = favorites.split(' ');
                     dispatch(setFavorite(favoriteSplit));
-
                 }
 
                 })

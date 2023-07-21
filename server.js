@@ -36,7 +36,7 @@ server.use(session({
     }, 
     resave: false,
     saveUninitialized: true,
-    secret: process.env.SECRET
+    secret: 'pancake'
 }))
 
 // const cn = {
