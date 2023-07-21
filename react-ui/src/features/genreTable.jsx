@@ -7,13 +7,18 @@ export const fetchData = createAsyncThunk("haveRead", async() => {
     return data;
 })
 
+const setList = (list) => {
+    const _list = [...new Set(list)].filter(x => x.length > 0 )
+    return _list
+}
+
 export const genreTableSlice = createSlice({
     name: "Genres",
     initialState: [],
     reducers: {
         setGenreRecommendations(state, action) {
-            const value = action.payload
-            return [...state, value]
+            const value = setList([...state, ...action.payload])
+            return value
         }
     },
     extraReducers(builder) {

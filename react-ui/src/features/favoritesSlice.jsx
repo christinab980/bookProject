@@ -7,10 +7,10 @@ export const fetchData = createAsyncThunk("favorites", async() => {
     return data;
 })
 
-const setList = (list) => {
-    const _list = [...new Set(list)].filter(x => x.length > 0 )
-    return _list
-}
+// const setList = (list) => {
+//     const _list = [...new Set(list)].filter(x => x.length > 0 )
+//     return _list
+// }
 
 export const favesSlice = createSlice({
     name: "favorites",

@@ -3,13 +3,6 @@ import GenreButtons from "./genreButtons"
 
 const Modal = () => {
 
-    // const [showAccountPage, setShowAccountPage] = useState(false);
-
-    // function handleGenreRecommendation() {
-    //     setShowAccountPage(true)
-
-    // }
-
     return (
         <>
             <div className='modal-container'>
