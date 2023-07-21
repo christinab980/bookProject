@@ -20,11 +20,11 @@ const Account = () => {
     useEffect(() => {
         if (url === 'account') {
             console.log('hi', _username)
-                fetch(`https://book-project-ecru.vercel.app/api/account`, {
+                // fetch(`https://book-project-ecru.vercel.app/api/account`, 
+                fetch(`http://localhost:8080/api/account`, {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json',
-                        "Access-Control-Allow-Headers": "*",
                     },
                     body: JSON.stringify({_username})
                 })
