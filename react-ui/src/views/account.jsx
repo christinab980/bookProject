@@ -32,7 +32,7 @@ const Account = () => {
                 .then((response) => {
                     console.log(response);
                     if (response) {
-                    let favorites = response[0].favoritegenres;
+                    let favorites = response.favoritegenres;
                     let favoriteSplit = favorites.split(' ');
                     dispatch(setFavorite(favoriteSplit));
 

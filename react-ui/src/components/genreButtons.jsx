@@ -93,9 +93,9 @@ const Genre = () => {
                         Sports
                 </button>
                 <button 
-                    onClick={() => handleGenre("young-adults")} 
-                    className={isActive.includes("young-adults") ? "active" : " "}
-                    data-attribute="young-adults">
+                    onClick={() => handleGenre("youngAdults")} 
+                    className={isActive.includes("youngAdults") ? "active" : " "}
+                    data-attribute="youngAdults">
                         Young Adults
                 </button>
                 <button 

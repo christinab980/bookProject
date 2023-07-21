@@ -7,30 +7,14 @@ import { setFavorite, favorites } from "../features/favoritesSlice";
 const GenreBook = () => {
 
     const _favorites = useSelector(favorites)
-    console.log("thisone", _favorites)
+    console.log("favorite", _favorites)
 
     const category = {advice, education, family, fiction, nonFiction, foodAndFitness, humor, manga, science, sports, travel, youngAdult }
-    
-    function stringToObject(selectedGenre) {
-        selectedGenre = selectedGenre.slice(1,-1).split(",")
-        const objectData = {};
-        for (let i = 0; i < selectedGenre.length; i++) {
-        const key = i; 
-        const value = selectedGenre[i].trim(); 
-        objectData[key] = value;
-        }
 
-        return objectData;
-    }
-
-    const test = stringToObject(_favorites)
-    console.log(test)
-    // JSON.parse(test)
-
-    return (
-        <> 
-        {test.results.books.slice(0, 10).map((result, index)  =>
-            (result !== "" ? <div className="book-container" key={result.rank}>
+    const favoritesList = _favorites && _favorites.map((fav, index) => {
+        console.log("a", fav)
+        const _fav = category[fav] && category[fav].results.books.map((result, index)  => (
+            <div className="book-container" key={result.rank}>
                     <div className="book-img">
                         <img src={result.book_image} alt="book-cover" />
                     </div>
@@ -42,9 +26,15 @@ const GenreBook = () => {
                         url={result.amazon_product_url}
                         book={result}
                     />
-                </div> : null
+                </div>
             )
-        )}
+        );
+        return _fav
+    })
+
+    return (
+        <> 
+            {favoritesList}
         </>
     )
 }
