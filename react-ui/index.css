@@ -361,7 +361,7 @@ form a {
   text-align: center;
 }
 
-.genre-category-component {
+.genre-category-component, .recommended-books {
   display: flex;
   gap: 15px;
   width: 90vw;

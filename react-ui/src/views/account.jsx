@@ -61,9 +61,6 @@ const Account = () => {
                     <div>
                         <h2 className="account-headings">Favorite Books</h2>
                     </div> 
-                    <div>
-                        <h2 className="account-headings">Books I've Read</h2>
-                    </div> 
                 </div>
             ):
             (
