@@ -12,6 +12,7 @@ const Header = () => {
     const navs = data
         .filter(nav => nav.isPrivate === isLoggedIn)
         .map( nav => <NavLink key={nav.href} to={nav.href}>{nav.name}</NavLink>);
+
     const home = logo.map(nav => <NavLink key={nav.href} to={nav.href}><img className="logo" src={nav.src} /> </NavLink>)
 
     return (
