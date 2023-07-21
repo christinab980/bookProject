@@ -4,6 +4,7 @@ import usernameSlice from "../features/usernameSlice";
 import favoritesSlice from "../features/favoritesSlice";
 import haveReadSlice from "../features/haveReadSlice"
 import genreTable from "../features/genreTable";
+import isloggedInSlice from "../features/isloggedInSlice";
 
 export default configureStore({
     reducer: {
@@ -11,6 +12,7 @@ export default configureStore({
         username: usernameSlice,
         favorites: favoritesSlice,
         read: haveReadSlice,
-        genreRecommendation: genreTable 
+        genreRecommendation: genreTable,
+        isLoggedIn: isloggedInSlice,
     }
 })

@@ -6,8 +6,10 @@ import { Provider } from 'react-redux'
 import store from './src/app/store.jsx'
 import { fetchData } from './src/features/dataSlice.jsx'
 import './index.css'
+import { verifyAuth } from './src/features/isloggedInSlice.jsx'
 
 store.dispatch(fetchData())
+store.dispatch(verifyAuth())
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>

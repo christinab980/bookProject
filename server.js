@@ -1,4 +1,5 @@
 require('dotenv').config();
+const checkAuth = require('./middleware')
 
 const cookieParser = require('cookie-parser');
 const express = require('express');
@@ -7,6 +8,7 @@ const cors = require('cors');
 const bcrypt = require('bcrypt');
 let date = new Date().toISOString();
 const path = require('path');
+const session = require('express-session');
 
 const server = express();
 server.use(express.json());
@@ -18,6 +20,15 @@ server.use(express.static(path.resolve(__dirname +  '/react-ui/dist')));
 
 server.options("*", cors());
 server.use(cors())
+server.use(session({
+    cookie: {
+        secure: false,
+        maxAge: 86400
+    }, 
+    resave: false,
+    saveUninitialized: true,
+    secret: 'pancake'
+}))
 
 // const cn = {
 //     host: 'localhost',
@@ -31,7 +42,7 @@ server.use(cors())
 const db = pgp(process.env.ESQL);
 
 
-server.get('/heartbeat', (req, res) => {
+server.get('/heartbeat', checkAuth, (req, res) => {
     res.json({message: 'heartbeat'})
 })
 
@@ -79,22 +90,24 @@ server.post('/api/signup', async (req, res) => {
     }
 })
 
+server.get('/api/verifyAuth', (req, res) => {
+    res.json({isAuthenticated: !!req.session.user})
+}),
+
 server.post('/api/signin', async (req, res) => {
     const {username, email, password} = req.body;
     // let results = [];
     let search = await db.query(`SELECT * FROM users WHERE username='${username}'`);
     let search2 = await db.query(`SELECT * FROM users WHERE email='${email}'`);
-    console.log(search2)
+
     if (search.length > 0 || search2.length > 0) {
         const hashedpassword = await db.query(`SELECT password FROM users WHERE username='${username}'`);
-        console.log(password);
-        console.log(hashedpassword)
         const matchup = await bcrypt.compare(password, hashedpassword[0].password);
-        console.log(matchup)
         if (matchup === true) {
+            req.session.user = search[0].username
             res.json({
                 username: username,
-                isAuthenticated: true,
+                isAuthenticated: !!req.session.user,
                 redirectTo: '/account'
             })
         } else if (matchup === false) {
@@ -124,7 +137,7 @@ server.post('/api/account', async (req, res) => {
 })
 
 server.get('*', (req, res) => {
-    console.log('hello')
+    // console.log('hello')
     const filePath = path.resolve(__dirname, './react-ui/dist', 'index.html');
     res.setHeader('Content-Type', 'text/html');
     res.sendFile(filePath);
