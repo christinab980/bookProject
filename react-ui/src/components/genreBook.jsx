@@ -21,11 +21,7 @@ const GenreBook = () => {
                     <div className="book-title">{result.title}</div>
                     <div className="book-author">{result.author}</div>
                     <div className="book-description">{result.description}</div>
-                    <Button 
-                        bookRank={result.rank}
-                        url={result.amazon_product_url}
-                        book={result}
-                    />
+                    <a className="buy-here-button" href={result.amazon_product_url} target="_blank">Buy Here</a>
                 </div>
             )
         );
