@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-export const fetchData = createAsyncThunk("haveRead", async() => {
+export const fetchData = createAsyncThunk("genre", async() => {
     let dbCall = await fetch('/account');
     let data = dbCall.json();
     console.log(data);
@@ -28,7 +28,7 @@ export const genreTableSlice = createSlice({
     }
 })
 
-export const genres = state => state.Genres;
+export const genres = state => state.genreRecommendation;
 
 export const { setGenreRecommendations } = genreTableSlice.actions;
 

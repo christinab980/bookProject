@@ -35,8 +35,8 @@ const Account = () => {
                     console.log(response);
                     if (response) {
                     let favorites = response.favoritegenres;
-                    let favoriteSplit = favorites.split(' ');
-                    dispatch(setFavorite(favoriteSplit));
+                    // let favoriteSplit = favorites.split(' ');
+                    dispatch(setFavorite(favorites));
                 }
 
                 })
@@ -44,7 +44,7 @@ const Account = () => {
     }, [])
     return (
         <>
-            {_favorites.length > 0 ? (
+            {_genre && _genre.length > 0 ? (
                 <div className="account-container">
                     <div className='hero-image-account'>
                         <div className='hero-text'>

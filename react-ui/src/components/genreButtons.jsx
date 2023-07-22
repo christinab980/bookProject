@@ -20,35 +20,24 @@ const Genre = () => {
         // commenting out line 14 as there are ways to utilize the favorites slice for genre recomms, we can reinstate it later when we find a need
         // dispatch(setGenreRecommendations(category))
         dispatch(setGenreRecommendations(genres));
-        // fetch('https://book-project-ecru.vercel.app/api/setFavoriteGenres', {
-        fetch('http://localhost:8080/api/setFavoriteGenres', {
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({_username, genres, books})
-        })
-        .then((response) => response.json())
-        .then((response) => {
-            console.log(response.message)
-        })
     }
 
     function handleGenre (clickedGenre) {
-            let genreArray = genres.split(" ");
+            let genreArray =[...genres];
         
             let indexFound = isActive.indexOf(clickedGenre)
 
             if(indexFound === -1 && isActive.length < 3) {
                 setIsActive([...isActive, clickedGenre])
                 genreArray.push(clickedGenre)
-                let newGenres = genreArray.join(" ")
-                setGenres(newGenres)
+                // let newGenres = genreArray.join(" ")
+                setGenres(genreArray)
             } else {
                 //filterActive will work for isActive and Genres array 
                 let filterActive = isActive.filter( genre => genre !== clickedGenre )
                 setIsActive(filterActive)
-                let newGenres = filterActive.join(" ")
-                setGenres(newGenres)
+                // let newGenres = filterActive.join(" ")
+                setGenres(filterActive)
             }
     }
 

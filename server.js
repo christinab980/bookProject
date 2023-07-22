@@ -135,7 +135,7 @@ server.post('/api/account', async (req, res) => {
     let userIdQuery = await db.query(`SELECT personid FROM users where username='${_username}'`);
     console.log(userIdQuery);
     console.log(userIdQuery[0]);
-    let userId = userIdQuery && userIdQuery[0].personid;
+    let userId = userIdQuery && userIdQuery[0] && userIdQuery[0].personid;
     let favorites = await db.query(`SELECT favoritegenres from favorites WHERE personid='${userId}'`);
     if (favorites && favorites.length > 0) {
         res.json(favorites);

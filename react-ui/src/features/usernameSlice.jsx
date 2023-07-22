@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const usernameSlice = createSlice({
     name: "username",
-    initialState: [],
+    initialState: " ",
     reducers: {
         addUsernameToStore(state, action) {
             return action.payload;

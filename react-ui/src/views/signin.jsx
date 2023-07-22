@@ -33,7 +33,7 @@ const SignIn = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        dispatch(addUsernameToStore({username}))
+        dispatch(addUsernameToStore(username))
         dispatch(verifyAuth({username, email, password}));
         // navigate(response.redirectTo)
         setUsername('');
