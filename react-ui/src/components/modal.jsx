@@ -1,14 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import GenreButtons from "./genreButtons"
 
 const Modal = () => {
-
-    // const [showAccountPage, setShowAccountPage] = useState(false);
-
-    // function handleGenreRecommendation() {
-    //     setShowAccountPage(true)
-
-    // }
 
     return (
         <>

@@ -8,12 +8,22 @@ import { selectIsLoggedIn } from '../features/isloggedInSlice';
 
 const Header = () => {
     const isLoggedIn = useSelector(selectIsLoggedIn) 
-
+    console.log("hello")
     const navs = data
-        .filter(nav => nav.isPrivate === isLoggedIn)
-        .map( nav => <NavLink key={nav.href} to={nav.href}>{nav.name}</NavLink>);
-
-    const home = logo.map(nav => <NavLink key={nav.href} to={nav.href}><img className="logo" src={nav.src} /> </NavLink>)
+        // .filter(nav => nav.isPrivate === isLoggedIn)
+        .map( nav => {
+            if(isLoggedIn === true) {
+                return <NavLink key={nav.href} to={nav.href}>{nav.name}</NavLink>
+            } else {
+                if(nav.name === "Account") {
+                    return 
+                } else {
+                    return <NavLink key={nav.href} to={nav.href}>{nav.name}</NavLink>
+                }
+            } 
+        });
+    
+        const home = logo.map(nav => <NavLink key={nav.href} to={nav.href}><img className="logo" src={nav.src} /> </NavLink>)
 
     return (
         <header>

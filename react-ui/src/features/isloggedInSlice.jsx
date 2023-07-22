@@ -1,25 +1,26 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-const doLogin = async(username, password) => {
+const doLogin = async(username, email, password) => {
     const options = {
-        body: JSON.stringify({username, password}),
+        body: JSON.stringify({username, email, password}),
         headers: {
             'Content-Type': 'application/json'
         },
         method: 'POST'
     };
 
+    //https://book-project-ecru.vercel.app/api/signin
 const response = await fetch ('/api/signin', options);
 const data = await response.json();
 return await data;
 };
 
-export const verifyAuth = createAsyncThunk('/api/signin', async ({username, password}) => {
-    if(username && password) {
-        const response = await doLogin(username, password);
-        const { isSuccess } = response
-        console.log("this one", response)
-        return isSuccess
+export const verifyAuth = createAsyncThunk('/api/signin', async ({username, email, password}) => {
+    if(username && email  && password) {
+        const response = await doLogin(username, email, password);
+        const { isAuthenticated } = response
+        console.log("verifyAuth", isAuthenticated)
+        return isAuthenticated
     } else return false 
 })
 
@@ -34,7 +35,7 @@ export const isLoggedInSlice = createSlice({
     }
 })
 
-export const setIsLoggedIn  = isLoggedInSlice.actions;
+// export const setIsLoggedIn  = isLoggedInSlice.actions;
 
 export const selectIsLoggedIn = state => state.isLoggedIn
 

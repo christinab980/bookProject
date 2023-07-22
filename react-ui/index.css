@@ -201,12 +201,17 @@ a {
   color: #5e90a0;
 }
 
-.book-buy-button, .dropdown-button, form button {
+.book-buy-button, .dropdown-button, form button, .buy-here-button {
   padding: 10px;
   text-align: center;
   background-color: #3f91ab;
   color: aliceblue;
   border-radius: 20px;
+}
+
+.buy-here-button a { 
+  font-size: .8rem;
+  margin: 10px;
 }
 
 /* discover stylings  */
@@ -361,11 +366,17 @@ form a {
   text-align: center;
 }
 
-.genre-category-component {
+.genre-category-component, .recommended-books {
   display: flex;
   gap: 15px;
   width: 90vw;
   overflow-x: scroll;
+}
+
+.recommended-books {
+  height: 500px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .genre-category-container {
@@ -450,6 +461,10 @@ form a {
 .account-headings, .welcome-heading {
   text-align: center;
   color:#215466;
+}
+
+.account-headings {
+  margin-bottom: 5%;
 }
 
 .welcome-heading {

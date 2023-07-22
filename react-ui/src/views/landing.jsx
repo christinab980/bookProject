@@ -1,7 +1,6 @@
 import React from 'react';
 import Book from "../components/book";
 import LandingPopularGenres from '../components/landingButtons';
-
 const Landing = () => {
 
     return (

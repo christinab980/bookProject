@@ -2,18 +2,18 @@ import React from "react";
 import Button from "./button"
 import  { advice, education, family, fiction, nonFiction, foodAndFitness, humor, manga, science, sports, travel, youngAdult } from "../mock/index"
 import { useSelector } from "react-redux";
+import { setGenreRecommendations, genres } from "../features/genreTable";
 import { setFavorite, favorites } from "../features/favoritesSlice";
 
 const GenreBook = () => {
 
     const _favorites = useSelector(favorites)
-    console.log("favorite", _favorites)
+    const _genre = useSelector(genres)
 
     const category = {advice, education, family, fiction, nonFiction, foodAndFitness, humor, manga, science, sports, travel, youngAdult }
 
-    const favoritesList = _favorites && _favorites.map((fav, index) => {
-        console.log("a", fav)
-        const _fav = category[fav] && category[fav].results.books.map((result, index)  => (
+    const genreList = _genre && _genre.map((rec, index) => {
+        const _genreRec = category[rec] && category[rec].results.books.map((result, index)  => (
             <div className="book-container" key={result.rank}>
                     <div className="book-img">
                         <img src={result.book_image} alt="book-cover" />
@@ -21,20 +21,16 @@ const GenreBook = () => {
                     <div className="book-title">{result.title}</div>
                     <div className="book-author">{result.author}</div>
                     <div className="book-description">{result.description}</div>
-                    <Button 
-                        bookRank={result.rank}
-                        url={result.amazon_product_url}
-                        book={result}
-                    />
+                    <a className="buy-here-button" href={result.amazon_product_url} target="_blank">Buy Here</a>
                 </div>
             )
         );
-        return _fav
+        return _genreRec
     })
 
     return (
         <> 
-            {favoritesList}
+            {genreList}
         </>
     )
 }

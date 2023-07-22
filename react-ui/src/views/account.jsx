@@ -4,6 +4,7 @@ import { setFavorite, favorites } from "../features/favoritesSlice";
 import { username } from "../features/usernameSlice";
 import { useDispatch, useSelector } from "react-redux";
 import GenreBook from "../components/genreBook";
+import { setGenreRecommendations, genres } from "../features/genreTable";
 
 
 import Modal from '../components/modal.jsx';
@@ -13,6 +14,7 @@ const Account = () => {
     const dispatch = useDispatch();
     const _username = useSelector(username);
     const _favorites = useSelector(favorites);
+    const _genre = useSelector(genres)
     const currentUrl = location.href;
     const url = currentUrl.match(/([^\/]+$)/g)[0];
     
@@ -20,11 +22,11 @@ const Account = () => {
     useEffect(() => {
         if (url === 'account') {
             console.log('hi', _username)
-                fetch(`https://book-project-ecru.vercel.app/api/account`, {
+                // fetch(`https://book-project-ecru.vercel.app/api/account`, 
+                fetch(`http://localhost:8080/api/account`, {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json',
-                        "Access-Control-Allow-Headers": "*",
                     },
                     body: JSON.stringify({_username})
                 })
@@ -33,9 +35,8 @@ const Account = () => {
                     console.log(response);
                     if (response) {
                     let favorites = response.favoritegenres;
-                    let favoriteSplit = favorites.split(' ');
-                    dispatch(setFavorite(favoriteSplit));
-
+                    // let favoriteSplit = favorites.split(' ');
+                    dispatch(setFavorite(favorites));
                 }
 
                 })
@@ -43,7 +44,7 @@ const Account = () => {
     }, [])
     return (
         <>
-            {_favorites.length > 0 ? (
+            {_genre && _genre.length > 0 ? (
                 <div className="account-container">
                     <div className='hero-image-account'>
                         <div className='hero-text'>
@@ -60,9 +61,6 @@ const Account = () => {
                     </div> 
                     <div>
                         <h2 className="account-headings">Favorite Books</h2>
-                    </div> 
-                    <div>
-                        <h2 className="account-headings">Books I've Read</h2>
                     </div> 
                 </div>
             ):
