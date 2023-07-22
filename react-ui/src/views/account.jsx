@@ -18,12 +18,11 @@ const Account = () => {
     const currentUrl = location.href;
     const url = currentUrl.match(/([^\/]+$)/g)[0];
     
-
+    console.log(_favorites)
     useEffect(() => {
         if (url === 'account') {
             console.log('hi', _username)
-                // fetch(`https://book-project-ecru.vercel.app/api/account`, 
-                fetch(`http://localhost:8080/api/account`, {
+                fetch(`https://book-project-ecru.vercel.app/api/account`, {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json',
@@ -35,10 +34,8 @@ const Account = () => {
                     console.log(response);
                     if (response) {
                     let favorites = response.favoritegenres;
-                    // let favoriteSplit = favorites.split(' ');
                     dispatch(setFavorite(favorites));
                 }
-
                 })
         }
     }, [])
@@ -61,6 +58,9 @@ const Account = () => {
                     </div> 
                     <div>
                         <h2 className="account-headings">Favorite Books</h2>
+                        <div>
+                            {_favorites}
+                        </div>
                     </div> 
                 </div>
             ):
