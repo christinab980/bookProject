@@ -46,12 +46,14 @@ const Genre = () => {
             <div className="genre-buttons">
                 <button 
                     onClick={handleGenre} 
+                    className={isActive.includes("family") ? "active" : " "}
                     data-attribute="family" 
                     href='genres'>
                         Family
                 </button>
                 <button 
                     onClick={handleGenre}
+                    className={isActive.includes("fiction") ? "active" : " "}
                     data-attribute="fiction">
                         Fiction
                 </button>
@@ -63,16 +65,19 @@ const Genre = () => {
                 </button>
                 <button 
                     onClick= {handleGenre} 
+                    className={isActive.includes("manga") ? "active" : " "}
                     data-attribute="manga">
                         Manga
                 </button>
                 <button 
                     onClick= {handleGenre} 
+                    className={isActive.includes("science") ? "active" : " "}
                     data-attribute="science">
                         Science
                 </button>
                 <button 
                     onClick= {handleGenre} 
+                    className={isActive.includes("sports") ? "active" : " "}
                     data-attribute="sports">
                         Sports
                 </button>
@@ -84,11 +89,13 @@ const Genre = () => {
                 </button>
                 <button 
                     onClick= {handleGenre} 
+                    className={isActive.includes("travel") ? "active" : " "}
                     data-attribute="travel">
                         Travel
                 </button>
                 <button  
                     onClick= {handleGenre} 
+                    className={isActive.includes("education") ? "active" : " "}
                     data-attribute="education">
                         Education
                 </button>
@@ -106,6 +113,7 @@ const Genre = () => {
                 </button>
                 <button 
                     onClick= {handleGenre} 
+                    className={isActive.includes("humor") ? "active" : " "}
                     data-attribute="humor">
                         Humor
                 </button>
