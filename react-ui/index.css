@@ -209,7 +209,7 @@ a {
   border-radius: 20px;
 }
 
-.buy-here-button a { 
+.buy-here-button { 
   font-size: .8rem;
   margin: 10px;
 }
@@ -464,7 +464,7 @@ form a {
 }
 
 .account-headings {
-  margin-bottom: 5%;
+  margin: 5% 0; 
 }
 
 .welcome-heading {

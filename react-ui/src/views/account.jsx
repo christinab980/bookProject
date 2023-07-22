@@ -18,7 +18,7 @@ const Account = () => {
     const currentUrl = location.href;
     const url = currentUrl.match(/([^\/]+$)/g)[0];
     
-
+    console.log(_favorites)
     useEffect(() => {
         if (url === 'account') {
             console.log('hi', _username)
@@ -35,10 +35,8 @@ const Account = () => {
                     console.log(response);
                     if (response) {
                     let favorites = response.favoritegenres;
-                    // let favoriteSplit = favorites.split(' ');
                     dispatch(setFavorite(favorites));
                 }
-
                 })
         }
     }, [])
@@ -61,6 +59,9 @@ const Account = () => {
                     </div> 
                     <div>
                         <h2 className="account-headings">Favorite Books</h2>
+                        <div>
+                            {_favorites}
+                        </div>
                     </div> 
                 </div>
             ):

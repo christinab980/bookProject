@@ -9,8 +9,7 @@ const doLogin = async(username, email, password) => {
         method: 'POST'
     };
 
-    //https://book-project-ecru.vercel.app/api/signin
-const response = await fetch ('/api/signin', options);
+const response = await fetch ('https://book-project-ecru.vercel.app/api/signin', options);
 const data = await response.json();
 return await data;
 };
