@@ -5,8 +5,7 @@ const LandingPopularGenres = () => {
     return (
         <>
             <div className="genre-landing-component">
-                <a
-                    className='genre-landing-component-a'
+                <a 
                     data-attribute="family" 
                     href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
                         Family
