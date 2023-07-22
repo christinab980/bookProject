@@ -18,16 +18,18 @@ serving the static files from the `react-ui` directory, specifically the `index.
 allows the server to serve the frontend of the application when the corresponding route is accessed. */
 server.use(express.static(path.resolve(__dirname +  '/react-ui/dist')));
 
-server.use(function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:5173');
-    res.header('Access-Control-Allow-Headers', 'Content-Type,Authorization');
-    res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE');
-    if (req.method === 'OPTIONS') {
-        return res.send(204);
-    }
-        next();
-    });
+// server.use(function(req, res, next) {
+//     res.header('Access-Control-Allow-Origin', 'https://next-book-8gle58h0d-christinab980.vercel.app/');
+//     res.header('Access-Control-Allow-Headers', 'Content-Type,Authorization');
+//     res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE');
+//     if (req.method === 'OPTIONS') {
+//         return res.send(204);
+//     }
+//         next();
+//     });
 
+server.options("*", cors());
+server.use(cors())
 
 server.use(session({
     cookie: {
