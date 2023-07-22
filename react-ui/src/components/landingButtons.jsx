@@ -7,62 +7,62 @@ const LandingPopularGenres = () => {
             <div className="genre-landing-component">
                 <a 
                     data-attribute="family" 
-                    href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
+                    href='/genres'>
                         Family
                 </a>
                 <a 
                     data-attribute="fiction"
-                    href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
+                    href='/genres'>
                         Fiction
                 </a>
                 <a 
                     data-attribute="non-fiction"
-                    href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
+                    href='/genres'>
                         Non-Fiction 
                 </a>
                 <a 
                     data-attribute="manga"
-                    href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
+                    href='/genres'>
                         Manga
                 </a>
                 <a 
                     data-attribute="science"
-                    href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
+                    href='/genres'>
                         Science
                 </a>
                 <a 
                     data-attribute="sports"
-                    href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
+                    href='/genres'>
                         Sports
                 </a>
                 <a 
                     data-attribute="young-adults"
-                    href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
+                    href='/genres'>
                         Young Adults
                 </a>
                 <a 
                     data-attribute="travel"
-                    href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
+                    href='/genres'>
                         Travel
                 </a>
                 <a  
                     data-attribute="education"
-                    href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
+                    href='/genres'>
                         Education
                 </a>
                 <a 
                     data-attribute="paperback-advice"
-                    href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
+                    href='/genres'>
                         Advice
                 </a>
                 <a 
                     data-attribute="food-and-fitness"
-                    href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
+                    href='/genres'>
                         Food and Fitness
                 </a>
                 <a 
                     data-attribute="humor"
-                    href='https://next-book-7hcurg108-christinab980.vercel.app/genres'>
+                    href='/genres'>
                         Humor
                 </a>
             </div>
